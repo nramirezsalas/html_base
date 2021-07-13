@@ -1,0 +1,626 @@
+@import "mixin";
+
+$celeste: #009FE3;
+$amarillo: #FFEC00;
+$rojo: #E30613;
+$gris: #848587;
+$gris2: #989898;
+$gris3: #CCCCCC;
+$gris4: #777;
+$small: 1rem;
+$lead: 1.5rem;
+
+$mb-title: 50px;
+$mb-subtitle: 1.5rem;
+
+.mb-title {
+	margin-bottom: $mb-title;
+}
+
+.mt-title {
+	margin-top: $mb-title;
+}
+
+.mb-subtitle {
+	margin-bottom: $mb-subtitle;
+}
+
+.px-large-1 {
+	padding: 0 20%;
+	@include mobile {
+		padding: 0;
+	}
+}
+
+.px-large-2 {
+	padding: 0 15%;
+	@include mobile {
+		padding: 0;
+	}
+}
+
+.text-justify {
+	@include mobile {
+		text-align: left !important;
+	}
+}
+
+main {
+	a {
+		&.gris {
+			color: $gris;
+
+			&:hover {
+				color: $rojo;
+			}
+		}
+	}
+}
+
+/* admin toolbar */
+body.toolbar-horizontal {
+	#toolbar-administration {
+		position: relative;
+		z-index: 9999;
+	}
+
+	.c-header {
+		padding-top: 39px;
+	}
+
+	&.toolbar-tray-open {
+		.c-header {
+			padding-top: 79px;
+		}
+	}
+}
+
+/* local tast */
+.local-task {
+	ul {
+		background: #eeeeee;
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin: 0;
+		padding: 1rem;
+
+		li {
+			a {
+				margin: 0 .5rem;
+				background: white;
+				padding: .2rem 1rem;
+			}
+		}
+	}
+}
+
+#spb-politicas {
+	.spb_overlay {
+		background-color: rgba(0, 0, 0, 1);
+	}
+
+	.spb-aceptar {
+		display: flex;
+
+		.spb-controls {
+			position: relative;
+			right: auto;
+			left: 0;
+		}
+	}
+}
+
+.no-link {
+	pointer-events: none;
+	cursor: default;
+
+	.stretched-link {
+		&::after {
+			display: none;
+		}
+	}
+}
+
+/* base, custom fonts  */
+$pathFonst: '/css'; /* gulp */
+$pathFonst0: '/themes/mic2021/html/public/css'; /* prod, lando, test drupalx.in */
+/*
+@font-face {
+	font-family: 'typoslab_irregular';
+	src: url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.eot');
+	src: url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.eot?#iefix') format('embedded-opentype'),
+	url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.woff2') format('woff2'),
+	url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.woff') format('woff'),
+	url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.ttf') format('truetype'),
+	url($pathFonst + '/themefonts/typoslab_irregular_demo-webfont.svg#typoslab_irregular_demoRg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+.font-varsity {
+	font-family: Varsity !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+}
+
+.font-arial-rounded {
+	font-family: "Arial Rounded MT";
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-typoslab {
+	font-family: "typoslab_irregular";
+	font-weight: normal;
+	font-style: normal;
+}
+
+/**************************** placeholder forms *******/
+::placeholder {
+	color: rgba(0, 0, 0, 0.5) !important;
+	opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/**************************** radio, check format *******/
+.checkbox input[type="checkbox"] {
+	opacity: 0;
+	position: absolute;
+}
+
+.checkbox label {
+	position: relative;
+	display: inline-block;
+	font-size: 90%;
+	/*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+	padding-left: 30px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+	position: absolute;
+	content: "";
+	/*Needed for the line-height to take effect*/
+	display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before {
+	height: 18px;
+	width: 18px;
+	border: 2px solid black;
+	left: 0;
+	top: 0;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+	height: 6px;
+	width: 10px;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	transform: rotate(-45deg);
+	left: 4px;
+	top: 4px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+	content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+	content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+/* .checkbox input[type="checkbox"]:focus+label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+} */
+
+
+.bounce {
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+/*********** reset bootstrap ***********/
+.sticky-top {
+	top: 80px;
+
+	&.en-biblioteca-niveles {
+		margin-top: 86px;
+	}
+}
+
+/*********** custom css for theme - base *********/
+body {
+	font-family: 'Helvetica';
+	font-weight: normal;
+	overflow-x: hidden;
+
+	&.visible_menu {
+		&::before {
+			content: '';
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			background-color: rgba(0, 0, 0, .75);
+			z-index: 10;
+		}
+	}
+
+	ul {
+		li {
+			a {
+				&.text-link {
+					color: $rojo;
+				}
+			}
+		}
+	}
+
+	p,
+	li,
+	table {
+		a {
+			&.text-link {
+				color: $rojo;
+			}
+		}
+	}
+
+	ol {
+		li {
+			line-height: 1.25;
+		}
+
+		&.list-format-1 {
+			list-style: none;
+			counter-reset: my-awesome-counter;
+			margin: 0 0 1.5rem .5rem;
+			padding: 0;
+
+			li {
+				counter-increment: my-awesome-counter;
+				display: flex;
+				margin-bottom: 1rem;
+
+				&::before {
+					content: '●';
+					color: $gris3;
+					font-weight: bold;
+					font-size: 1.5rem;
+					margin-right: .75rem;
+					line-height: 1;
+					@include mobile {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+
+		&.list-format-2 {
+			counter-reset: list;
+			margin: 0 0 1.5rem .5rem;
+			padding: 0;
+
+			li {
+				list-style: none;
+				display: flex;
+				margin-bottom: 1rem;
+
+				&::before {
+					content: counter(list, lower-alpha) ".";
+					counter-increment: list;
+					color: $gris4;
+					font-weight: bold;
+					font-size: 1.35rem;
+					font-family: monospace;
+					margin-right: .75rem;
+					line-height: 1;
+					@include mobile {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+
+		&.list-format-3 {
+			counter-reset: list;
+			margin: 0 0 1.5rem .5rem;
+			padding: 0;
+
+			li {
+				list-style: none;
+				display: flex;
+				margin-bottom: 1rem;
+
+				&::before {
+					content: counter(list, decimal) ".";
+					counter-increment: list;
+					color: $gris4;
+					font-weight: bold;
+					font-size: 1.35rem;
+					font-family: monospace;
+					margin-right: .75rem;
+					line-height: 1;
+					@include mobile {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+
+		&.list-format-cas {
+			list-style: none;
+			counter-reset: my-awesome-counter;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: flex;
+				align-items: flex-start;
+				margin-bottom: 1.5rem;
+
+				p {
+					* {
+						display: block;
+						line-height: 1.25;
+					}
+
+					strong {
+						margin-bottom: .4rem;
+						color: $rojo;
+					}
+				}
+
+				&::before {
+					content: "";
+					color: $rojo;
+					font-weight: normal;
+					font-family: 'typoslab_irregular';
+					font-size: 6rem;
+					margin-right: 2.5rem;
+					line-height: 1;
+					@include mobile {
+						font-size: 5rem;
+						margin-right: 1.5rem;
+					}
+				}
+
+				&:nth-child(1) {
+					&::before {
+						content: 'C';
+					}
+				}
+
+				&:nth-child(2) {
+					&::before {
+						content: 'A';
+					}
+				}
+
+				&:nth-child(3) {
+					&::before {
+						content: 'S';
+					}
+				}
+			}
+		}
+	}
+
+	@include mobile {
+		font-size: 1rem !important;
+		.lead {
+			font-size: 18px !important;
+		}
+	}
+}
+
+.text-gris-oscuro {
+	color: $gris;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+h2 {
+	@include mobile {
+		text-align: center;
+	}
+}
+
+.h2 {
+	@include mobile {
+		font-size: 1.5rem;
+	}
+}
+
+aside {
+	h3 {
+		letter-spacing: unset;
+	}
+}
+
+img.cover {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+a,
+button,
+input.form-submit {
+	@include transition;
+
+	&:hover {
+		@include transition;
+	}
+}
+
+.main-content {
+	img.hover-efect {
+		@include transition;
+
+		&:hover {
+			@include transition;
+			transform: rotate(3deg);
+		}
+	}
+
+	.row {
+		> div {
+			margin-bottom: 30px;
+			@include mobile {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.btn-rojo {
+	border-radius: .6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "Arial Rounded MT";
+	border: 0;
+	font-size: 1.1rem;
+	padding: 0.375rem 1.25rem;
+
+	&:hover {
+		background-color: black;
+	}
+
+	&.btn-rojo--invertido {
+		background-color: $gris;
+
+		&:hover {
+			background-color: $rojo;
+		}
+	}
+}
+
+.btn-celeste {
+	border-radius: .6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "Arial Rounded MT";
+	border: 0;
+	font-size: 1.1rem;
+	padding: 0.375rem 1.25rem;
+	color: white !important;
+
+	&:hover {
+		background-color: black;
+	}
+}
+
+.right-0 {
+	right: calc(100% - 90%);
+	@include mobile {
+		right: 15px;
+	}
+}
+
+.left-0 {
+	left: calc(100% - 90%);
+	@include mobile {
+		left: 15px;
+	}
+}
+
+.title-section {
+	color: black;
+	margin-top: $mb-title;
+	margin-bottom: $mb-title;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'typoslab_irregular';
+	letter-spacing: 2px;
+	@include mobile {
+		font-size: 30px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	span {
+		display: block;
+		font-weight: normal;
+		font-size: 24px;
+		margin-top: .3rem;
+		letter-spacing: 1px;
+		color: $gris;
+		@include mobile {
+			font-size: 20px;
+		}
+	}
+
+	&.title--version-varsity {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		span {
+			display: inline-block;
+			font-weight: normal;
+			font-size: inherit;
+			margin-top: 0;
+			letter-spacing: inherit;
+			color: inherit;
+
+			&:first-child {
+				margin-right: .75rem;
+			}
+
+			&.font-varsity {
+				font-size: 3rem;
+			}
+		}
+	}
+}
+
+.subtitle-section {
+	color: $gris;
+	font-family: 'typoslab_irregular';
+	letter-spacing: 1px;
+	font-weight: normal;
+	margin-bottom: $mb-subtitle;
+	@include mobile {
+		font-size: 26px;
+	}
+}
+
+.subtitle-section-h3 {
+	color: $gris;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+
+/*********** custom css for theme *********/

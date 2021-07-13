@@ -1,0 +1,45 @@
+-
+	let isHome;
+	let isPage1;
+	let isPage2;
+	let isPage3;
+
+case currentPage
+	when 'home'
+		- isHome = 'active'
+	when 'page-1'
+		- isPage1 = 'active'
+	when 'page-2'
+		- isPage2 = 'active'
+	when 'page-3'
+		- isPage3 = 'active'
+	default
+		- isHome = 'active'
+-
+	let items_menu = [
+		{
+			'title': 'Home',
+			'path': 'index.html',
+			'class': 'nav-link ' + isHome
+		},
+		{
+			'title': 'Page 1',
+			'path': 'page-1.html',
+			'class': 'nav-link ' + isPage1
+		},
+		{
+			'title': 'Page 2',
+			'path': '#',
+			'class': 'nav-link ' + isPage2
+		},
+		{
+			'title': 'Page 3',
+			'path': '#',
+			'class': 'nav-link ' + isPage3
+		}
+	];
+
+ul(class="navbar-nav ml-lg-auto justify-content-between")
+	each val, index in items_menu
+		li(class='nav-item')
+			a(class=val.class href= val.path)= val.title

@@ -168,16 +168,19 @@ jQuery.noConflict();
              * IS MOBILE
              */
             if (getWidth() < 768) {
+                /*
                 let altoSliderNav;
                 let altoSlider = $('.c-carousel-home .item img').height();
                 altoSliderNav = (altoSlider / 2) - 25;
+                */
 
-                $('.c-carousel-home .owl-carousel .owl-nav').css('top', altoSliderNav + 'px');
+                //$('.c-carousel-home .owl-carousel .owl-nav').css('top', altoSliderNav + 'px');
 
                 // hover menu disabled
-                $('.nav-link.dropdown-toggle').attr('data-toggle', 'dropdown');
+                //$('.nav-link.dropdown-toggle').attr('data-toggle', 'dropdown');
             }
-            console.log(getWidth());
+
+            console.log('hola mundo');
         });
 
     });

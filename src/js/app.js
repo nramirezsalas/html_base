@@ -88,26 +88,25 @@ jQuery.noConflict();
              */
 
             // menu sticky scroll - fixed
-            if ($('.c-header__menu-principal')[0]) {
-                let scrollTop = $('.c-header__menu-principal').offset().top;
-                //console.log(scrollTop);
+            if ($('.c-header')[0]) {
+                let scrollTop = $('.c-header').offset().top;
 
                 $(window).scroll(function () {
                     if (getWidth() > 768) {
                         if ($(window).scrollTop() > scrollTop) {
-                            $('.c-header__menu-principal').addClass('fixed-top');
-                            $('.fixed-margin-top').addClass('fixed-yes');
-                            $('.fixed-margin-top').removeClass('fixed-no');
+                            $('.c-header').addClass('fixed-top');
+                            let altoHeader = $('.c-header').height();
+                            $('main').css('margin-top', altoHeader + 'px');
                         } else {
-                            $('.c-header__menu-principal').removeClass('fixed-top');
-                            $('.fixed-margin-top').addClass('fixed-no');
-                            $('.fixed-margin-top').removeClass('fixed-yes');
+                            $('.c-header').removeClass('fixed-top');
+                            $('main').removeAttr('style');
                         }
                     }
                 });
             }
+
             // scrool to
-            $('a[href^="#"]').on('click', function (event) {
+            $('a.scrool-to').on('click', function (event) {
                 var target = $(this.getAttribute('href'));
                 if (target.length) {
                     event.preventDefault();

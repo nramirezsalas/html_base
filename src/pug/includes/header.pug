@@ -1,13 +1,23 @@
 header(class="c-header w-100 bg-dark")
-  h1(class="d-none") #{pageTitle}
-  nav(class="navbar navbar-expand-lg navbar-dark z-index-2 w-100 py-2" id="menuPrincipal")
-    div(class='container')
-      a(class='navbar-brand' href='./index.html') SiteName
-        //img(src="./logo.svg" alt='SiteName')
-      button(class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
-        span.navbar-toggler-icon
-      div(class='collapse navbar-collapse' id='navbarNav')
-        // MENU PRINCIPAL
-        include menu
+   h1(class="d-none") #{pageTitle}
+   nav(class="navbar navbar-expand-lg navbar-dark z-index-2 w-100 py-2" id="menuPrincipal")
+      div(class='container')
+         a(class='navbar-brand' href='./index.html') SiteName
+            //img(src="./logo.svg" alt='SiteName')
+         button(class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+         div(class='collapse navbar-collapse' id='navbarNav')
+            // MENU PRINCIPAL
+            // include menu
+            ul.navbar-nav
+               li.nav-item
+                  a.nav-link.active(href="#") Home
+               li.nav-item.dropdown
+                  a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Category
+                  ul.dropdown-menu(aria-labelledby="navbarDropdown")
+                     li: a.dropdown-item(href="#") Category 1
+                     li: a.dropdown-item(href="#") Category 2
+               li.nav-item
+                  a.nav-link(href="#") Page
 
-  #inicio
+   #inicio

@@ -1,4 +1,4 @@
-# html base
+# HTML BASE
 Estructura para maquetación con Bootstrap v5, incluye automatización para SASS y PUG.
 
 Ejcutar:

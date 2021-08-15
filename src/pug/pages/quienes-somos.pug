@@ -1,0 +1,83 @@
+extends ../templates/template
+append config
+   - pageTitle= "Quienes somos";
+   - currentPage= "home";
+
+append header
+
+append main
+   main.main-content
+      .hero.hero--interna
+         .container.w-100.h-100.position-relative
+            .d-flex.align-items-center.justify-content-center.h-100
+               .hero__texto
+                  h1 Quienes somos
+                  nav.breadcrumb
+                     ul.list-unstyled.d-flex.m-0
+                        li: a(href="#") Inicio
+                        li Quiénes somos
+
+
+      section.section-inner
+         .container.position-relative
+            .row
+               .col-md-8.offset-md-2.text-center
+                  .title-section
+                     h2
+                        span El Remanso
+                        | Camposanto Ecológico<br>y Crematorio
+                  p Desarrollado con capitales Trujillanos se origina un anfiteatro natural, ubicado en el sector Huanchaquito Alto, con un estilo propio, caracterizado por grandes y hermosas áreas verdes y edificaciones diseñadas para la comodidad de nuestros visitantes; transformando así el espacio en un lugar único, donde se respira la paz y tranquilidad que invita a visitar a los seres queridos que ya no están con nosotros.
+
+                  p A finales del 2015, y por iniciativa de un grupo de empresarios locales, nace en Trujillo el Camposanto Ecológico y Crematorio “El Remanso”, motivados por brindar a las familias de la ciudad un lugar donde la naturaleza sea el marco perfecto para el encuentro con aquellos que nos dejaron; un lugar con conceptos paisajísticos acogedores, y una hermosa vista al mar.
+
+                  p El REMANSO es un lugar único y especial, diseñado como un espacio de encuentro y recogimiento. Cuenta con un paisaje que lo transforma en oasis de silencio y calma para visitar a nuestros seres queridos. Posee una hermosa capilla ecuménica y salones velatorios para honrar y recordar a los que ya no están con nosotros.
+                  p: a.btn.btn-verde(href="#") Ver galería de fotos
+
+      .section-inner.bg-verde.text-white
+         .container
+            .row
+               .col-md-6
+                  section
+                     .title-section
+                        img.img-fluid(src="./img/image.jpg" width="40px")
+                        h2 Misión
+                     p Ofrecer a nuestra comunidad servicios de sepelio, creando opciones adaptadas a cada necesidad y cuidado del medio ambiente. Asimismo, brindar paz y tranquilidad a través de un equipo humano, empático, profesional y orientado al servicio.
+               .col-md-6
+                  section
+                     .title-section
+                        img.img-fluid(src="./img/image.jpg" width="40px")
+                        h2 Visión
+                        p Ser la empresa líder en la prestación de servicios de sepelio, con una atención personalizada, profesional y altos estándares de calidad que permitan conmemorar la vida con dignidad.
+
+      section
+         .container
+            .row
+               .col-md-6
+                  .section-inner
+                     .title-section
+                        h2.text-celeste Nuestros valores
+                     p Representado en el nombre de nuestra mascota
+                     ul
+                        li Respetamos a las personas
+                        li Integridad, ante todo
+                        li Comprometidos con nuestros sueños
+                        li Orgullosos de lo que hacemos
+                        li Nos comunicamos abiertamente
+                        li Apasionados por servir a nuestros clientes
+                        li Somos emprendedores
+                     p Nuestro camposanto  es un lugar único y especial con un estilo propio caracterizado por una arquitectura monumental y hermosas áreas verdes , diseñado para crear un entorno lleno de paz y armonía con la naturaleza.
+
+                     p Estamos comprometidos con nuestra comunidad brindando las mejores soluciones de sepelio y planes de previsión, con una asesoría personalizada y un equipo comprometido, empático, profesional y que ama lo que hace.
+                     p Estamos orgullosos de ser trujillanos y de nuestro enfoque innovador para seguir creciendo y mejorando cada día en beneficio de toda la comunidad.
+
+                     p Estamos aquí para cuidar de ti y los tuyos, porque una buena decisión hoy te dara la tranquilidad para enfocarte en lo más importante, disfrutar la vida.
+               .col-md-6
+                  img.img-fluid(src="./img/image.jpg")
+
+
+
+
+
+
+
+append footer

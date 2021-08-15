@@ -1,23 +1,48 @@
-header(class="c-header w-100 bg-dark")
+header(class="main-header w-100 bg-dark")
    h1(class="d-none") #{pageTitle}
-   nav(class="navbar navbar-expand-lg navbar-dark z-index-2 w-100 py-2" id="menuPrincipal")
-      div(class='container')
-         a(class='navbar-brand' href='./index.html') SiteName
-            //img(src="./logo.svg" alt='SiteName')
-         button(class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
-            span.navbar-toggler-icon
-         div(class='collapse navbar-collapse' id='navbarNav')
-            // MENU PRINCIPAL
-            // include menu
-            ul.navbar-nav
-               li.nav-item
-                  a.nav-link.active(href="#") Home
-               li.nav-item.dropdown
-                  a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Category
-                  ul.dropdown-menu(aria-labelledby="navbarDropdown")
-                     li: a.dropdown-item(href="#") Category 1
-                     li: a.dropdown-item(href="#") Category 2
-               li.nav-item
-                  a.nav-link(href="#") Page
+   .container-fluid
+      .top-bar
+         ul.list-unstyled.d-flex.justify-content-end
+            li: a(href="#") Servicios del día
+            li: a(href="#") Comprobantes electrónicos
+            li: a(href="#") <i class="fab fa-facebook-f"></i>
+            li: a(href="#") <i class="fab fa-instagram"></i>
+            li: a(href="#") <i class="fab fa-youtube"></i>
+            li: a(href="#") <i class="fab fa-whatsapp"></i>
+      .menu-bar
+         .row.align-items-center
+            .col-md-4.col-lg-5
+               nav(class="navbar navbar-expand-lg navbar-dark z-index-2 py-2" id="menuPrincipal")
+                  div(class='collapse navbar-collapse' id='navbarNav')
+                     ul.navbar-nav.d-flex.justify-content-around.w-100
+                        li.nav-item
+                           a.nav-link(href="./quienes-somos.html") Quiénes somos
+                        li.nav-item
+                           a.nav-link(href="./camposanto.html") Camposanto
+                        li.nav-item
+                           a.nav-link(href="./servicios.html") Servicios
+                     ul.navbar-nav.d-flex.justify-content-around.w-100.d-block.d-md-none
+                        li.nav-item
+                           a.nav-link(href="./medios-de-pago.html") Medios de pago
+                        li.nav-item
+                           a.nav-link(href="./agencias-afiliadas.html") Agencias afiliadas
+                        li.nav-item
+                           a.nav-link(href="./contactanos.html") Contáctenos
+            .col-md-4.col-lg-2
+               div.text-center
+                  a(class='navbar-brand' href='./index.html') EL REMANSO
+                  //img(src="./logo.svg" alt='SiteName')
+            .col-md-4.col-lg-5
+               nav(class="navbar navbar-expand-lg navbar-dark z-index-2 py-2")
+                  button(class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+                     span.navbar-toggler-icon
+                  div(class='collapse navbar-collapse')
+                     ul.navbar-nav.d-flex.justify-content-around.w-100
+                        li.nav-item
+                           a.nav-link(href="./medios-de-pago.html") Medios de pago
+                        li.nav-item
+                           a.nav-link(href="./agencias-afiliadas.html") Agencias afiliadas
+                        li.nav-item
+                           a.nav-link(href="./contactanos.html") Contáctenos
 
    #inicio

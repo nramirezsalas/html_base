@@ -389,6 +389,38 @@ input.form-submit {
    font-weight: 600;
 }
 
+ul.pagination {
+   li {
+      margin: 0 .75rem;
+
+      a {
+         color: white;
+         background: $azul;
+         border: 0;
+         display: block;
+         width: 48px;
+         height: 48px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-weight: 700;
+         font-size: 14px;
+         font-style: normal;
+         border-radius: 5px !important;
+
+         &:hover,
+         &.is-active {
+            background: $celeste;
+         }
+      }
+   }
+}
+
+iframe {
+   width: 100%;
+   height: 500px;
+}
+
 /*********** custom css for theme *********/
 body {
    font-weight: 300;
@@ -765,31 +797,6 @@ body {
 }
 
 section {
-   &.section-inner {
-      overflow: hidden;
-
-      .bg-image {
-         position: absolute;
-         z-index: -1;
-      }
-
-      &.home-nosotros {
-         min-height: 600px;
-
-         .bg-image {
-            bottom: 0;
-         }
-      }
-
-      &.home-servicios {
-         .row {
-            @include pc {
-               flex-direction: row-reverse;
-            }
-         }
-      }
-   }
-
    &.home-solicitar-servicio {
       .bg-onda {
          top: -210px;
@@ -804,6 +811,85 @@ section {
          top: -250px;
          left: 10px;
          width: 247px;
+      }
+   }
+}
+
+.section-inner {
+   overflow: hidden;
+
+   .bg-image {
+      position: absolute;
+      z-index: -1;
+   }
+
+   &.home-nosotros {
+      min-height: 600px;
+
+      .bg-image {
+         bottom: 0;
+      }
+   }
+
+   &.home-servicios {
+      .row {
+         @include pc {
+            flex-direction: row-reverse;
+         }
+      }
+   }
+
+   &.agencias-page {
+      .row-agencias {
+         & > div:nth-child(odd) {
+            .agencia {
+               background: $azul;
+               color: white;
+            }
+         }
+
+         & > div:nth-child(even) {
+            .agencia {
+               color: $azul;
+            }
+         }
+      }
+   }
+
+   &.contactanos {
+      .mapa {
+         iframe {
+            border-radius: 50px;
+         }
+      }
+
+      .social {
+         li {
+            margin-right: 2rem;
+
+            &:last-child {
+               margin-right: 0;
+            }
+
+            a {
+               background: $verde;
+               width: 40px;
+               height: 40px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               border-radius: 50%;
+
+               i {
+                  color: white;
+                  font-size: 1.2rem;
+               }
+
+               &:hover {
+                  background: $azul;
+               }
+            }
+         }
       }
    }
 }
@@ -846,9 +932,30 @@ section {
 
          a {
             font-weight: 600;
+            @include link-hover($verde, -2px)
+         }
+      }
+   }
 
-            &:hover {
-               text-decoration: underline;
+   textarea {
+      height: 120px !important;
+      border-radius: 25px !important;
+   }
+
+   &.input-bg-white {
+      .form-control {
+         background: white;
+      }
+
+      .form-check-acepto {
+         label {
+            font-size: 12px;
+            color: $azul;
+
+            a {
+               font-weight: 600;
+               color: white;
+               @include link-hover(white, -2px)
             }
          }
       }
@@ -880,6 +987,15 @@ section {
          font-style: normal;
          font-weight: bold;
          font-size: 18px;
+         line-height: 100%;
+      }
+   }
+
+   &.title-section--md {
+      h2 {
+         font-style: normal;
+         font-weight: 700;
+         font-size: 20px;
          line-height: 100%;
       }
    }
@@ -990,21 +1106,140 @@ section {
 }
 
 .agencia {
-   p {
-      font-style: normal;
-      margin-bottom: 0;
+   &.item-carousel {
+      p {
+         font-style: normal;
+         margin-bottom: 0;
 
-      &:nth-child(1) {
-         font-weight: 500;
-         font-size: 16px;
-         line-height: 150%;
+         &:nth-child(1) {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+         }
+
+         &:nth-child(2),
+         &:nth-child(3) {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+         }
+      }
+   }
+
+   &.item-page {
+      padding: 3rem 1.5rem;
+      margin-bottom: 40px;
+
+      p {
+         font-style: normal;
+         margin-bottom: 0;
+
+         &:nth-child(1) {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 1px;
+            margin-bottom: .65rem;
+         }
+
+         &:nth-child(2) {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+         }
+
+         &:nth-child(3) {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 150%;
+         }
       }
 
-      &:nth-child(2),
-      &:nth-child(3) {
-         font-weight: 300;
-         font-size: 14px;
-         line-height: 150%;
+      .d-flex {
+         margin-top: 1.5rem;
+
+         a {
+            color: $celeste;
+            margin: 0 .5rem;
+
+            i {
+               font-size: 1.5rem;
+            }
+
+            &:hover {
+               color: $verde;
+            }
+         }
+      }
+   }
+}
+
+.servicio-del-dia {
+   overflow: hidden;
+   border-radius: 15px;
+
+   .image {
+      overflow: hidden;
+      z-index: 0;
+
+      img {
+         border-radius: 15px;
+         @include transition;
+      }
+   }
+
+   .text-center {
+      z-index: 9;
+   }
+
+   @include transition;
+
+   &:hover {
+      @include transition;
+
+      .image {
+         img {
+            //transform: scale(1.1);
+         }
+
+         &::before {
+            background: rgba(255, 255, 255, .58);
+            z-index: 1;
+         }
+
+         &::after {
+            background: rgba(0, 0, 0, .4);
+         }
+      }
+
+   }
+}
+
+.form-agencias-search {
+   position: relative;
+
+   .form-control {
+      border: 1px solid $azul;
+      border-radius: 5px;
+      color: $azul;
+      padding-left: 1rem;
+   }
+
+   label {
+      padding-left: 1rem;
+   }
+
+   .btn-submit {
+      position: absolute;
+      top: 10px;
+      right: 1rem;
+
+      input {
+         font-size: 0;
+         width: 22px;
+         height: 24px;
+         border: 0;
+         background: url("./../img/svg/ico-search.svg") no-repeat;
       }
    }
 }

@@ -71,31 +71,38 @@
         <div class="container w-100 h-100 position-relative">
           <div class="d-flex align-items-center justify-content-center h-100">
             <div class="hero__texto">
-              <h1>Servicios del día</h1>
+              <h1 class="text-white">Servicios del día</h1>
               <nav class="breadcrumb">
-                <ul class="list-unstyled d-flex m-0">
-                  <li><a href="#">Inicio</a></li>
-                  <li>Servicios del día</li>
-                </ul>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                  <li class="breadcrumb-item active">Servicios del día</li>
+                </ol>
               </nav>
             </div>
           </div>
         </div>
+        <div class="hero__image hero--cover">
+          <picture>
+            <source srcset="./img/header/servicios-de-dia.webp" type="image/webp">
+            <source srcset="./img/header/servicios-de-dia.jpeg" type="image/jpeg"><img class="cover" src="./img/header/servicios-de-dia.jpeg" alt="Servicios">
+          </picture>
+        </div>
+        <div class="bg-onda"><img src="./img/svg/onda1.svg"></div>
       </div>
       <section class="section-inner">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <article class="servicio-del-dia position-relative">
-                <div><img class="img-fluid" src="./img/image.jpg"></div>
+              <article class="servicio-del-dia position-relative mb-5">
+                <div class="image"><img class="img-fluid" src="./img/dia-sepelios.jpeg"></div>
                 <div class="text-center mt-n4">
                   <h2><a class="btn btn-azul stretched-link" href="servicios-del-dia-sepelios.html">Sepelios</a></h2>
                 </div>
               </article>
             </div>
             <div class="col-md-6">
-              <article class="servicio-del-dia position-relative">
-                <div><img class="img-fluid" src="./img/image.jpg"></div>
+              <article class="servicio-del-dia position-relative mb-5">
+                <div class="image"><img class="img-fluid" src="./img/dia-velatorios.jpeg"></div>
                 <div class="text-center mt-n4">
                   <h2><a class="btn btn-azul stretched-link" href="#">Velatorios</a></h2>
                 </div>
@@ -103,7 +110,7 @@
             </div>
             <div class="col-md-6">
               <article class="servicio-del-dia position-relative">
-                <div><img class="img-fluid" src="./img/image.jpg"></div>
+                <div class="image"><img class="img-fluid" src="./img/dia-cremaciones.jpeg"></div>
                 <div class="text-center mt-n4">
                   <h2><a class="btn btn-azul stretched-link" href="#">Cremaciones</a></h2>
                 </div>
@@ -111,7 +118,7 @@
             </div>
             <div class="col-md-6">
               <article class="servicio-del-dia position-relative">
-                <div><img class="img-fluid" src="./img/image.jpg"></div>
+                <div class="image"><img class="img-fluid" src="./img/dia-misas.jpeg"></div>
                 <div class="text-center mt-n4">
                   <h2><a class="btn btn-azul stretched-link" href="#">Misas y Responsos</a></h2>
                 </div>

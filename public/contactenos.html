@@ -71,28 +71,35 @@
         <div class="container w-100 h-100 position-relative">
           <div class="d-flex align-items-center justify-content-center h-100">
             <div class="hero__texto">
-              <h1>Contáctenos</h1>
+              <h1 class="text-white">Contáctenos</h1>
               <nav class="breadcrumb">
-                <ul class="list-unstyled d-flex m-0">
-                  <li><a href="./index.html">Inicio</a></li>
-                  <li>Contáctenos</li>
-                </ul>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                  <li class="breadcrumb-item active">Contáctenos</li>
+                </ol>
               </nav>
             </div>
           </div>
         </div>
+        <div class="hero__image">
+          <picture>
+            <source srcset="./img/header/contactenos.webp" type="image/webp">
+            <source srcset="./img/header/contactenos.jpeg" type="image/jpeg"><img class="cover" src="./img/header/contactenos.jpeg" alt="Contáctenos">
+          </picture>
+        </div>
+        <div class="bg-onda"><img src="./img/svg/onda5.svg"></div>
       </div>
-      <section class="section-inner bg-verde">
+      <section class="section-inner bg-verde position-relative">
         <div class="container">
           <div class="row">
             <div class="col-md-6 offset-md-3">
-              <div class="search-agencias">
+              <div class="title-section title-section--md mb-5">
                 <h2 class="text-center text-white">ESCRÍBENOS</h2>
                 <p class="text-white">Si tienes alguna consulta adicional, déjanos tus datos y te responderemos a la brevedad posible.</p>
               </div>
             </div>
             <div class="col-md-8 offset-md-2">
-              <div class="formulario">
+              <div class="formulario input-bg-white">
                 <form>
                   <div class="row">
                     <div class="col-md-6">
@@ -126,13 +133,13 @@
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <div class="form-check">
+                      <div class="form-check form-check-acepto">
                         <input class="form-check-input" id="terminos" type="checkbox">
                         <label class="form-check-label" for="terminos">Acepto los <a class="text-white" href="#" target="_blank">términos y condiciones</a> de El Remanso para el tratamiento de mis datos.</label>
                       </div>
                     </div>
                     <div class="col-md-12">
-                      <div class="form-actions text-center">
+                      <div class="form-actions text-center mt-4">
                         <input class="btn btn-azul" type="submit" value="Enviar">
                       </div>
                     </div>
@@ -143,30 +150,41 @@
           </div>
         </div>
       </section>
-      <section class="section-inner">
+      <section class="position-relative">
+        <div class="bg-onda"><img src="./img/svg/onda6.svg"></div>
         <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="title-section">
-                <h2><span>Nuestro</span>Camposanto</h2>
+          <div class="section-inner contactanos">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="title-section text-celeste">
+                  <h2><strong>Nuestro</strong><span>Camposanto</span></h2>
+                </div>
               </div>
-              <div class="mapa">IFRAME google maps</div>
             </div>
-            <div class="col-md-4">
-              <div>
-                <p><strong class="text-verde">Dirección<br></strong>Km. 10.5<br>
-                  Carretera Huanchaco,<br>
-                  Huanchaquito Alto<br>
-                  Trujillo - Perú
-                </p>
-                <p><strong class="text-verde">Central telefónica<br></strong>044-604170</p>
-                <p><strong class="text-verde">Central telefónica 24 horas<br></strong>+51 970 762 104</p>
+            <div class="row">
+              <div class="col-md-7">
+                <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1396.534266396212!2d-79.03213339445807!3d-8.101949212417724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d494448cccb%3A0xef261b357badb775!2sCampo%20santo%20El%20Remanso!5e0!3m2!1ses-419!2spe!4v1629268776157!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
               </div>
-              <ul class="list-unstyled d-flex">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-              </ul>
+              <div class="col-md-4 offset-md-1">
+                <div class="d-flex align-items-center h-100">
+                  <div>
+                    <div>
+                      <p><strong class="text-verde">Dirección<br></strong>Km. 10.5<br>
+                        Carretera Huanchaco,<br>
+                        Huanchaquito Alto<br>
+                        Trujillo - Perú
+                      </p>
+                      <p><strong class="text-verde">Central telefónica<br></strong>044-604170</p>
+                      <p><strong class="text-verde">Central telefónica 24 horas<br></strong>+51 970 762 104</p>
+                    </div>
+                    <ul class="list-unstyled d-flex social mt-5">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li class="d-none"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -11,37 +11,44 @@ append main
          .container.w-100.h-100.position-relative
             .d-flex.align-items-center.justify-content-center.h-100
                .hero__texto
-                  h1 Servicios del día
+                  h1.text-white Servicios del día
                   nav.breadcrumb
-                     ul.list-unstyled.d-flex.m-0
-                        li: a(href="#") Inicio
-                        li Servicios del día
+                     ol.breadcrumb
+                        li.breadcrumb-item: a(href="./index.html") Inicio
+                        li.breadcrumb-item.active Servicios del día
+         .hero__image.hero--cover
+            picture
+               source(srcset="./img/header/servicios-de-dia.webp" type="image/webp")
+               source(srcset="./img/header/servicios-de-dia.jpeg" type="image/jpeg")
+               img.cover(src="./img/header/servicios-de-dia.jpeg" alt="Servicios")
+         .bg-onda
+            img(src="./img/svg/onda1.svg")
 
       section.section-inner
          .container
             .row
                .col-md-6
-                  article.servicio-del-dia.position-relative
-                     div
-                        img.img-fluid(src="./img/image.jpg")
+                  article.servicio-del-dia.position-relative.mb-5
+                     div.image
+                        img.img-fluid(src="./img/dia-sepelios.jpeg")
                      div.text-center.mt-n4
                         h2: a.btn.btn-azul.stretched-link(href="servicios-del-dia-sepelios.html") Sepelios
                .col-md-6
-                  article.servicio-del-dia.position-relative
-                     div
-                        img.img-fluid(src="./img/image.jpg")
+                  article.servicio-del-dia.position-relative.mb-5
+                     div.image
+                        img.img-fluid(src="./img/dia-velatorios.jpeg")
                      div.text-center.mt-n4
                         h2: a.btn.btn-azul.stretched-link(href="#") Velatorios
                .col-md-6
                   article.servicio-del-dia.position-relative
-                     div
-                        img.img-fluid(src="./img/image.jpg")
+                     div.image
+                        img.img-fluid(src="./img/dia-cremaciones.jpeg")
                      div.text-center.mt-n4
                         h2: a.btn.btn-azul.stretched-link(href="#") Cremaciones
                .col-md-6
                   article.servicio-del-dia.position-relative
-                     div
-                        img.img-fluid(src="./img/image.jpg")
+                     div.image
+                        img.img-fluid(src="./img/dia-misas.jpeg")
                      div.text-center.mt-n4
                         h2: a.btn.btn-azul.stretched-link(href="#") Misas y Responsos
 

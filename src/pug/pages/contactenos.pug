@@ -11,21 +11,28 @@ append main
          .container.w-100.h-100.position-relative
             .d-flex.align-items-center.justify-content-center.h-100
                .hero__texto
-                  h1 Contáctenos
+                  h1.text-white Contáctenos
                   nav.breadcrumb
-                     ul.list-unstyled.d-flex.m-0
-                        li: a(href="./index.html") Inicio
-                        li Contáctenos
+                     ol.breadcrumb
+                        li.breadcrumb-item: a(href="./index.html") Inicio
+                        li.breadcrumb-item.active Contáctenos
+         .hero__image
+            picture
+               source(srcset="./img/header/contactenos.webp" type="image/webp")
+               source(srcset="./img/header/contactenos.jpeg" type="image/jpeg")
+               img.cover(src="./img/header/contactenos.jpeg" alt="Contáctenos")
+         .bg-onda
+            img(src="./img/svg/onda5.svg")
 
-      section.section-inner.bg-verde
+      section.section-inner.bg-verde.position-relative
          .container
             .row
                .col-md-6.offset-md-3
-                  .search-agencias
+                  .title-section.title-section--md.mb-5
                      h2.text-center.text-white ESCRÍBENOS
                      p.text-white Si tienes alguna consulta adicional, déjanos tus datos y te responderemos a la brevedad posible.
                .col-md-8.offset-md-2
-                  .formulario
+                  .formulario.input-bg-white
                      form
                         .row
                            .col-md-6
@@ -49,45 +56,52 @@ append main
                                  textarea.form-control#mensaje(placeholder="Mensaje")
                                  label(for="mensaje") Mensaje
                            .col-md-12
-                              .form-check
+                              .form-check.form-check-acepto
                                  input.form-check-input#terminos(type="checkbox")
                                  label.form-check-label(for="terminos") Acepto los <a class="text-white" href="#" target="_blank">términos y condiciones</a> de El Remanso para el tratamiento de mis datos.
                            .col-md-12
-                              .form-actions.text-center
+                              .form-actions.text-center.mt-4
                                  input.btn.btn-azul(type="submit" value="Enviar")
-      section.section-inner
+      section.position-relative
+         .bg-onda
+            img(src="./img/svg/onda6.svg")
          .container
-            .row
-               .col-md-8
-                  .title-section
-                     h2
-                        span Nuestro
-                        | Camposanto
-                  .mapa
-                     | IFRAME google maps
-               .col-md-4
-                  div
-                     p
-                        strong.text-verde Dirección<br>
-                        | Km. 10.5<br>
-                        | Carretera Huanchaco,<br>
-                        | Huanchaquito Alto<br>
-                        | Trujillo - Perú
+            .section-inner.contactanos
+               .row
+                  .col-md-12
+                     .title-section.text-celeste
+                        h2
+                           strong Nuestro
+                           span Camposanto
+               .row
+                  .col-md-7
+                     .mapa
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1396.534266396212!2d-79.03213339445807!3d-8.101949212417724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d494448cccb%3A0xef261b357badb775!2sCampo%20santo%20El%20Remanso!5e0!3m2!1ses-419!2spe!4v1629268776157!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  .col-md-4.offset-md-1
+                     .d-flex.align-items-center.h-100
+                        div
+                           div
+                              p
+                                 strong.text-verde Dirección<br>
+                                 | Km. 10.5<br>
+                                 | Carretera Huanchaco,<br>
+                                 | Huanchaquito Alto<br>
+                                 | Trujillo - Perú
 
-                     p
-                        strong.text-verde Central telefónica<br>
-                        | 044-604170
+                              p
+                                 strong.text-verde Central telefónica<br>
+                                 | 044-604170
 
-                     p
-                        strong.text-verde Central telefónica 24 horas<br>
-                        | +51 970 762 104
-                  ul.list-unstyled.d-flex
-                     li
-                        a(href="#") <i class="fab fa-facebook-f"></i>
-                     li
-                        a(href="#") <i class="fab fa-instagram"></i>
-                     li
-                        a(href="#") <i class="fab fa-youtube"></i>
+                              p
+                                 strong.text-verde Central telefónica 24 horas<br>
+                                 | +51 970 762 104
+                           ul.list-unstyled.d-flex.social.mt-5
+                              li
+                                 a(href="#") <i class="fab fa-facebook-f"></i>
+                              li
+                                 a(href="#") <i class="fab fa-instagram"></i>
+                              li.d-none
+                                 a(href="#") <i class="fab fa-youtube"></i>
 
 
 

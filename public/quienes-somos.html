@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quienes somos | El Remanso</title>
+    <title>Quiénes somos | El Remanso</title>
     <link rel="stylesheet" href="./css/libraries.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/app.css">
@@ -15,7 +15,7 @@
     <!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0&appId=6191271477565494&autoLogAppEvents=1" nonce="BT8ratLH"></script>-->
     <!-- HEADER-->
     <header class="main-header w-100">
-      <h1 class="d-none">Quienes somos</h1>
+      <h1 class="d-none">Quiénes somos</h1>
       <div class="container-fluid">
         <div class="top-bar">
           <ul class="list-unstyled d-flex justify-content-end m-0">
@@ -71,79 +71,92 @@
         <div class="container w-100 h-100 position-relative">
           <div class="d-flex align-items-center justify-content-center h-100">
             <div class="hero__texto">
-              <h1>Quienes somos</h1>
+              <h1 class="text-white">Quiénes somos</h1>
               <nav class="breadcrumb">
-                <ul class="list-unstyled d-flex m-0">
-                  <li><a href="./index.html">Inicio</a></li>
-                  <li>Quiénes somos</li>
-                </ul>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                  <li class="breadcrumb-item active">Quiénes somos</li>
+                </ol>
               </nav>
             </div>
           </div>
         </div>
+        <div class="hero__image">
+          <picture>
+            <source srcset="./img/header/quienes-somos.webp" type="image/webp">
+            <source srcset="./img/header/quienes-somos.jpeg" type="image/jpeg"><img class="cover" src="./img/header/quienes-somos.jpeg" alt="Quiénes somos">
+          </picture>
+        </div>
+        <div class="bg-onda"><img src="./img/svg/onda1.svg"></div>
       </div>
       <section class="section-inner">
         <div class="container position-relative">
           <div class="row">
             <div class="col-md-8 offset-md-2 text-center">
-              <div class="title-section">
-                <h2><span>El Remanso</span>Camposanto Ecológico<br>y Crematorio</h2>
+              <div class="title-section text-celeste mb-6">
+                <h2><strong>El Remanso</strong><span>Camposanto Ecológico<br>y Crematorio</span></h2>
               </div>
               <p>Desarrollado con capitales Trujillanos se origina un anfiteatro natural, ubicado en el sector Huanchaquito Alto, con un estilo propio, caracterizado por grandes y hermosas áreas verdes y edificaciones diseñadas para la comodidad de nuestros visitantes; transformando así el espacio en un lugar único, donde se respira la paz y tranquilidad que invita a visitar a los seres queridos que ya no están con nosotros.</p>
               <p>A finales del 2015, y por iniciativa de un grupo de empresarios locales, nace en Trujillo el Camposanto Ecológico y Crematorio “El Remanso”, motivados por brindar a las familias de la ciudad un lugar donde la naturaleza sea el marco perfecto para el encuentro con aquellos que nos dejaron; un lugar con conceptos paisajísticos acogedores, y una hermosa vista al mar.</p>
               <p>El REMANSO es un lugar único y especial, diseñado como un espacio de encuentro y recogimiento. Cuenta con un paisaje que lo transforma en oasis de silencio y calma para visitar a nuestros seres queridos. Posee una hermosa capilla ecuménica y salones velatorios para honrar y recordar a los que ya no están con nosotros.</p>
-              <p><a class="btn btn-verde" href="#">Ver galería de fotos</a></p>
+              <p class="mt-6"><a class="btn btn-verde btn-sm" href="#">Ver galería de fotos</a></p>
             </div>
           </div>
         </div>
       </section>
-      <div class="section-inner bg-verde text-white">
+      <div class="section-inner section-inner--md bg-verde text-white">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <section>
-                <div class="title-section"><img class="img-fluid" src="./img/image.jpg" width="40px">
-                  <h2>Misión</h2>
+                <div class="title-section title-section--mini d-flex align-items-center"><img class="me-1" src="./img/svg/ico-mision.svg" width="42px">
+                  <h2 class="m-0">Misión</h2>
                 </div>
                 <p>Ofrecer a nuestra comunidad servicios de sepelio, creando opciones adaptadas a cada necesidad y cuidado del medio ambiente. Asimismo, brindar paz y tranquilidad a través de un equipo humano, empático, profesional y orientado al servicio.</p>
               </section>
             </div>
             <div class="col-md-6">
               <section>
-                <div class="title-section"><img class="img-fluid" src="./img/image.jpg" width="40px">
-                  <h2>Visión</h2>
-                  <p>Ser la empresa líder en la prestación de servicios de sepelio, con una atención personalizada, profesional y altos estándares de calidad que permitan conmemorar la vida con dignidad.</p>
+                <div class="title-section title-section--mini d-flex align-items-center"><img class="me-1" src="./img/svg/ico-vision.svg" width="42px">
+                  <h2 class="m-0">Visión</h2>
                 </div>
+                <p>Ser la empresa líder en la prestación de servicios de sepelio, con una atención personalizada, profesional y altos estándares de calidad que permitan conmemorar la vida con dignidad.</p>
               </section>
             </div>
           </div>
         </div>
       </div>
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="section-inner">
-                <div class="title-section">
-                  <h2 class="text-celeste">Nuestros valores</h2>
+      <section class="nuestros-valores">
+        <div class="container-fluid position-relative overflow-hidden">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="section-inner">
+                  <div class="title-section title-section--mini">
+                    <h2 class="text-celeste">Nuestros valores</h2>
+                  </div>
+                  <p>Representado en el nombre de nuestra mascota</p>
+                  <ul class="ps-4">
+                    <li>Respetamos a las personas</li>
+                    <li>Integridad, ante todo</li>
+                    <li>Comprometidos con nuestros sueños</li>
+                    <li>Orgullosos de lo que hacemos</li>
+                    <li>Nos comunicamos abiertamente</li>
+                    <li>Apasionados por servir a nuestros clientes</li>
+                    <li>Somos emprendedores</li>
+                  </ul>
+                  <p>Nuestro camposanto  es un lugar único y especial con un estilo propio caracterizado por una arquitectura monumental y hermosas áreas verdes , diseñado para crear un entorno lleno de paz y armonía con la naturaleza.</p>
+                  <p>Estamos comprometidos con nuestra comunidad brindando las mejores soluciones de sepelio y planes de previsión, con una asesoría personalizada y un equipo comprometido, empático, profesional y que ama lo que hace.</p>
+                  <p>Estamos orgullosos de ser trujillanos y de nuestro enfoque innovador para seguir creciendo y mejorando cada día en beneficio de toda la comunidad.</p>
+                  <p>Estamos aquí para cuidar de ti y los tuyos, porque una buena decisión hoy te dara la tranquilidad para enfocarte en lo más importante, disfrutar la vida.</p>
                 </div>
-                <p>Representado en el nombre de nuestra mascota</p>
-                <ul>
-                  <li>Respetamos a las personas</li>
-                  <li>Integridad, ante todo</li>
-                  <li>Comprometidos con nuestros sueños</li>
-                  <li>Orgullosos de lo que hacemos</li>
-                  <li>Nos comunicamos abiertamente</li>
-                  <li>Apasionados por servir a nuestros clientes</li>
-                  <li>Somos emprendedores</li>
-                </ul>
-                <p>Nuestro camposanto  es un lugar único y especial con un estilo propio caracterizado por una arquitectura monumental y hermosas áreas verdes , diseñado para crear un entorno lleno de paz y armonía con la naturaleza.</p>
-                <p>Estamos comprometidos con nuestra comunidad brindando las mejores soluciones de sepelio y planes de previsión, con una asesoría personalizada y un equipo comprometido, empático, profesional y que ama lo que hace.</p>
-                <p>Estamos orgullosos de ser trujillanos y de nuestro enfoque innovador para seguir creciendo y mejorando cada día en beneficio de toda la comunidad.</p>
-                <p>Estamos aquí para cuidar de ti y los tuyos, porque una buena decisión hoy te dara la tranquilidad para enfocarte en lo más importante, disfrutar la vida.</p>
               </div>
             </div>
-            <div class="col-md-6"><img class="img-fluid" src="./img/image.jpg"></div>
+          </div>
+          <div class="row position-absolute w-100 h-100 top-0 right-0">
+            <div class="col-md-6 offset-md-6 pe-lg-0 overflow-hidden position-relative"><img class="cover right" src="./img/nuestros-valores.jpeg">
+              <div class="bg-onda"><img src="./img/svg/onda3.svg"></div>
+            </div>
           </div>
         </div>
       </section>

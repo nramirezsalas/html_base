@@ -11,24 +11,31 @@ append main
          .container.w-100.h-100.position-relative
             .d-flex.align-items-center.justify-content-center.h-100
                .hero__texto
-                  h1 Medios de pago
+                  h1.text-white Medios de pago
                   nav.breadcrumb
-                     ul.list-unstyled.d-flex.m-0
-                        li: a(href="./index.html") Inicio
-                        li Medios de pago
+                     ol.breadcrumb
+                        li.breadcrumb-item: a(href="./index.html") Inicio
+                        li.breadcrumb-item.active Medios de pago
+         .hero__image
+            picture
+               source(srcset="./img/header/medios-de-pago.webp" type="image/webp")
+               source(srcset="./img/header/medios-de-pago.jpeg" type="image/jpeg")
+               img.cover(src="./img/header/medios-de-pago.jpeg" alt="Servicios")
+         .bg-onda
+            img(src="./img/svg/onda1.svg")
 
       .section-inner
          .container
             .row
                .col-md-6
                   section
-                     .title-section
+                     .title-section.text-verde
                         h2
                            strong En nuestras
-                           | Cuentas bancarias
+                           span Cuentas bancarias
                      div.d-flex.align-items-center
-                        div.me-3: img(src="./img/image.jpg" width="250px")
-                        div.d-flex.flex-column
+                        div.me-3: img(src="./img/logo-bcp.png" width="200px")
+                        div.d-flex.flex-column.text-azul
                            div.d-flex.flex-column.mb-3
                               strong Cta. Recaudadora El Remanso
                               span indicando número de DNI del titular.
@@ -36,8 +43,8 @@ append main
                               strong Agente BCP
                               span Código 15017 + DNI del titular.
                      div.d-flex.align-items-center.mt-6
-                        div.me-3: img(src="./img/image.jpg" width="250px")
-                        div.d-flex.flex-column
+                        div.me-3: img(src="./img/logo-interbank.png" width="200px")
+                        div.d-flex.flex-column.text-azul
                            div.d-flex.flex-column.mb-3
                               strong Cta. Recaudadora El Remanso
                               span indicando número de DNI del titular.
@@ -45,21 +52,22 @@ append main
                               strong Agente INTERBANK
                               span Código 0791001 + DNI del titular.
                .col-md-6
-                  section.bg-gris-eee.p-5
-                     .title-section
+                  section.bg-gris-eee.p-5.rounded
+                     .title-section.text-verde
                         h2
                            strong En nuestra
-                           | Oficina principal
-                     p Av. América Norte No.2195.
-                     p Urb. Quintanas - Trujillo
-                     p.text-verde Aceptamos todas las tarjetas
+                           span Oficina principal
+                     .text-azul
+                        p.mb-0 Av. América Norte No.2195.
+                        p Urb. Quintanas - Trujillo
+                        p.text-verde.text-uppercase.fs-6.fw-600.mb-3 Aceptamos todas las tarjetas
                      div.d-flex.justify-content-between
-                        img(src="./img/image.jpg" width="80px")
-                        img(src="./img/image.jpg" width="80px")
-                        img(src="./img/image.jpg" width="80px")
-                        img(src="./img/image.jpg" width="80px")
+                        img(src="./img/logo-visa.png" width="74px")
+                        img(src="./img/logo-mastercard.png" width="74px")
+                        img(src="./img/logo-dinners.png" width="74px")
+                        img(src="./img/logo-american.png" width="74px")
       div
-         img.img-fluid(src="./img/image.jpg")
+         img.img-fluid.cover(src="./img/oficinas.jpeg")
 
 
 

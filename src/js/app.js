@@ -84,6 +84,27 @@ jQuery.noConflict();
                }
             }
          })
+         $('.owl-servicios-2').owlCarousel({
+            loop: false,
+            margin: 42,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            responsive: {
+               0: {
+                  items: 1
+               },
+               600: {
+                  items: 2
+               },
+               768: {
+                  items: 3
+               },
+               960: {
+                  items: 4
+               }
+            }
+         })
 
          // servicio galeria
          $('.owl-servicio-galeria').owlCarousel({

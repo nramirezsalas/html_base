@@ -1,0 +1,40 @@
+section.home-solicitar-servicio.position-relative.overflow-hidden
+   .container
+      .row
+         .col-md-6.offset-md-6
+            .section-inner.px-lg-4
+               .title-section.text-azul
+                  h2
+                     strong Solicitar
+                     span Servicio
+               .formulario
+                  form
+                     .form-floating.form-select-arrow
+                        select.form-control#floatingServicio
+                           option(value="1") Sepulturas
+                           option(value="2") Servicios funerarios
+                           option(value="3") Cremaciones
+                           option(value="4") Servicios complementarios
+                        label(for="floatingServicio") Seleccionar servicio
+                     .form-floating
+                        input.form-control#floatingNombre(type="text" placeholder="Nombre y apellidos")
+                        label(for="floatingNombre") Nombre y apellidos
+                     .form-floating
+                        input.form-control#floatingTelefono(type="text" placeholder="Teléfono de contacto")
+                        label(for="floatingTelefono") Teléfono de contacto
+                     .form-floating
+                        input.form-control#floatingCorreo(type="email" placeholder="Correo electrónico")
+                        label(for="floatingCorreo") Correo electrónico
+                     .form-item.form-check.form-check-acepto
+                        input.form-check-input(type="checkbox" value="" id="flexCheckDefault")
+                        label.form-check-label(for="flexCheckDefault") Acepto los <a href="#toNosotros" class="scroll-to">términos y condiciones de El Remanso</a> para el tratamiento de mis datos.
+
+                     .form-actions.mt-4
+                        input.btn.btn-verde(type="submit" value="Enviar solicitud")
+
+
+   .row.position-absolute.w-100.h-100.top-0.left-0.z-bg
+      .col-md-6.pe-lg-0.overflow-hidden.position-relative
+         img.cover.right(src="./img/solicitar-servicio.jpeg")
+         .bg-onda
+            img(src="./img/svg/onda2.svg")

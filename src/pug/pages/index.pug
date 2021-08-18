@@ -10,71 +10,81 @@ append main
       .hero.hero--home
          .container.w-100.h-100.position-relative
             .hero__texto.position-absolute
-               p Belleza, paz y grandes recuerdos<br>en un solo lugar
-      section.section-inner
-         .container.position-relative
-            .title-section
-               h2#toNosotros
-                  span Acerca de
-                  | Nosotros
+               p.text-white Belleza, paz y grandes recuerdos<br>en un solo lugar
+         .hero__image
+            picture
+               source(srcset="./img/hero.webp" type="image/webp")
+               source(srcset="./img/hero.jpeg" type="image/jpeg")
+               img.cover(src="./img/hero.jpeg" alt="Belleza, paz y grandes recuerdos en un solo lugar")
+         .bg-onda
+            img(src="./img/svg/onda1.svg")
+      section.section-inner.home-nosotros.position-relative
+         .container
+            .title-section.text-celeste
+               h2
+                  strong Acerca de
+                  span Nosotros
             .row
                .col-md-6
-                  p El REMANSO es un lugar único y especial, diseñado como un espacio de encuentro y recogimiento. Cuenta con un paisaje que lo transforma en un oasis de silencio y calma para visitar a nuestros seres queridos. Posee una hermosa capilla ecuménica y salones velatorios para honrar y recordar a los que ya no están con nosotros.
-                  p.mb-0: a.btn.btn-verde(href="#") Más información
-            .bg-image
-               img(src="./img/image.jpg")
+                  p.text-justify El REMANSO es un lugar único y especial, diseñado como un espacio de encuentro y recogimiento. Cuenta con un paisaje que lo transforma en un oasis de silencio y calma para visitar a nuestros seres queridos. Posee una hermosa capilla ecuménica y salones velatorios para honrar y recordar a los que ya no están con nosotros.
+                  p.mb-0: a.btn.btn-verde.btn-sm(href="./quienes-somos.html") Más información
+         .bg-image
+            img.cover(src="./img/acerca-de-nosotros.jpeg")
 
-      section.section-inner.bg-azul.text-white
+      section.section-inner.bg-azul.text-white.home-servicios
          .container
             .row
-               .col-md-4
-                  .title-section.title-section--version-2
-                     img.img-fluid(src="./img/image.jpg" width="50px")
-                     h2
-                        span Nuestros
-                        | Servicios
-               .col-md-8
-                  .owl-carousel.owl-servicios.owl-theme
+               .col-md-3
+                  .d-flex.align-items-center.justify-content-center.w-100.h-100
+                     .title-section.text-center
+                        img.img-fluid.mb-4(src="./img/svg/manos-cruz.svg" width="78px")
+                        h2.mb-0
+                           strong Nuestros
+                           span Servicios
+               .col-md-9
+                  .owl-carousel.owl-servicios.owl-theme.owl-nav-1
                      .item
                         article.servicio.servicio--owl
                            .servicio__image
-                              img(src="./img/image.jpg")
+                              img(src="./img/sepulturas.jpeg")
                            .servicio__title
-                              h2: a.btn.btn-link.stretched-link(href="#") Sepulturas
+                              h2: a.stretched-link(href="./servicios-sepulturas.html") Sepulturas
                      .item
                         article.servicio.servicio--owl
                            .servicio__image
-                              img(src="./img/image.jpg")
+                              img(src="./img/servicios-funerarios.jpeg")
                            .servicio__title
-                              h2: a.btn.btn-link.stretched-link(href="#") Sepulturas
+                              h2: a.stretched-link(href="./servicios-funerarios.html") Servicios funerarios
                      .item
                         article.servicio.servicio--owl
                            .servicio__image
-                              img(src="./img/image.jpg")
+                              img(src="./img/cremaciones.jpeg")
                            .servicio__title
-                              h2: a.btn.btn-link.stretched-link(href="#") Sepulturas
+                              h2: a.stretched-link(href="./servicios-cremaciones.html") Cremaciones
                      .item
                         article.servicio.servicio--owl
                            .servicio__image
-                              img(src="./img/image.jpg")
+                              img(src="./img/cremaciones.jpeg")
                            .servicio__title
-                              h2: a.btn.btn-link.stretched-link(href="#") Sepulturas
+                              h2: a.stretched-link(href="./servicios-complementarios.html") Servicios complementarios
 
-      section
+      section.home-solicitar-servicio
          .container
             .row
-               .col-md-7
-                  .bg-image
-                     img.img-fluid(src="./img/image.jpg")
+               .col-md-7.position-relative.overflow-hidden
+                  .bg-image.h-100
+                     img.img-fluid.cover(src="./img/solicitar-servicio.jpeg")
+                  .bg-onda
+                     img(src="./img/svg/onda2.svg")
                .col-md-5
-                  .section-inner
-                     .title-section.title-section--version-2
+                  .section-inner.px-lg-4
+                     .title-section.text-azul
                         h2
-                           span Solicitar
-                           | Servicio
+                           strong Solicitar
+                           span Servicio
                      .formulario
                         form
-                           .form-floating
+                           .form-floating.form-select-arrow
                               select.form-control#floatingServicio
                                  option(value="1") Sepulturas
                                  option(value="2") Servicios funerarios
@@ -90,44 +100,44 @@ append main
                            .form-floating
                               input.form-control#floatingCorreo(type="email" placeholder="Correo electrónico")
                               label(for="floatingCorreo") Correo electrónico
-                           .form-item.form-check
+                           .form-item.form-check.form-check-acepto
                               input.form-check-input(type="checkbox" value="" id="flexCheckDefault")
                               label.form-check-label(for="flexCheckDefault") Acepto los <a href="#toNosotros" class="scroll-to">términos y condiciones de El Remanso</a> para el tratamiento de mis datos.
 
-                           .form-actions
+                           .form-actions.mt-4
                               input.btn.btn-verde(type="submit" value="Enviar solicitud")
 
 
-      section.section-inner.bg-celeste
+      section.section-inner.section-inner--small.bg-celeste
          .container
-            .title-section.title-section--version-3
-               h2 Agencias afiliadas
-            .owl-carousel.owl-agencias.owl-theme
+            .title-section.title-section--mini.text-center
+               h2.text-white Agencias afiliadas
+            .owl-carousel.owl-agencias.owl-theme.owl-nav-2
                .item
-                  .agencia.text-white
+                  .agencia.text-white.text-center
                      p.text-azul Funeraria Bon Valencia
                      p Jr. Pallardeli 298 – Urb Razuri
                      p Frente al Hospital de Alta complejidad
                .item
-                  .agencia.text-white
+                  .agencia.text-white.text-center
                      p.text-azul Funeraria Bon Valencia
                      p Jr. Pallardeli 298 – Urb Razuri
                      p Frente al Hospital de Alta complejidad
                .item
-                  .agencia.text-white
+                  .agencia.text-white.text-center
                      p.text-azul Funeraria Bon Valencia
                      p Jr. Pallardeli 298 – Urb Razuri
                      p Frente al Hospital de Alta complejidad
                .item
-                  .agencia.text-white
+                  .agencia.text-white.text-center
                      p.text-azul Funeraria Bon Valencia
                      p Jr. Pallardeli 298 – Urb Razuri
                      p Frente al Hospital de Alta complejidad
                .item
-                  .agencia.text-white
+                  .agencia.text-white.text-center
                      p.text-azul Funeraria Bon Valencia
                      p Jr. Pallardeli 298 – Urb Razuri
                      p Frente al Hospital de Alta complejidad
-            p.text-center: a.btn.btn-azul(href="#") Ver todas las agencias
+            p.text-center.mt-5: a.btn.btn-azul(href="./agencias-afiliadas.html") Ver todas las agencias
 
 append footer

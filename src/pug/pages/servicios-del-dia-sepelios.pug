@@ -1,0 +1,60 @@
+extends ../templates/template
+append config
+   - pageTitle= "Servicios del día - Sepelios";
+   - currentPage= "home";
+
+append header
+
+append main
+   main.main-content
+      .hero.hero--interna
+         .container.w-100.h-100.position-relative
+            .d-flex.align-items-center.justify-content-center.h-100
+               .hero__texto
+                  h1 Servicios del día
+                  nav.breadcrumb
+                     ul.list-unstyled.d-flex.m-0
+                        li: a(href="./index.html") Inicio
+                        li: a(href="./servicios-del-dia.html") Servicios del día
+                        li Sepelios
+
+      section.section-inner
+         .container
+            .row
+               .col-md-7
+                  .bg-verde.rounded.p-5
+                     .title-section
+                        h2.text-white Sepelios
+                     .sepelio-item.bg-white.p-4.rounded.mb-4
+                        p: strong PROSPERO EUCLIDES MENDEZ LUJAN
+                        p.small
+                           strong Plataforma :
+                           |Santo Toribio<br>
+                           strong Fecha :
+                           |14-07-2021<br>
+                           strong Hora:
+                           |11:00 am
+                     .sepelio-item.bg-white.p-4.rounded
+                        p: strong MELITA ANGULO PIZARRO
+                        p.small
+                           strong Plataforma :
+                           | Santo Marcos<br>
+                           strong Fecha :
+                           | 14-07-2021<br>
+                           strong Hora:
+                           | 16:30 pm
+               .col-md-5
+                  .owl-carousel.owl-servicio-del-dia.owl-nav-1
+                     .item
+                        img(src="./img/image.jpg")
+                     .item
+                        img(src="./img/image.jpg")
+                     .item
+                        img(src="./img/image.jpg")
+
+
+
+
+
+
+append footer

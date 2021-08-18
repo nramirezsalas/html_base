@@ -1,0 +1,70 @@
+extends ../templates/template
+append config
+   - pageTitle= "Medios de pago";
+   - currentPage= "home";
+
+append header
+
+append main
+   main.main-content
+      .hero.hero--interna
+         .container.w-100.h-100.position-relative
+            .d-flex.align-items-center.justify-content-center.h-100
+               .hero__texto
+                  h1 Medios de pago
+                  nav.breadcrumb
+                     ul.list-unstyled.d-flex.m-0
+                        li: a(href="./index.html") Inicio
+                        li Medios de pago
+
+      .section-inner
+         .container
+            .row
+               .col-md-6
+                  section
+                     .title-section
+                        h2
+                           strong En nuestras
+                           | Cuentas bancarias
+                     div.d-flex.align-items-center
+                        div.me-3: img(src="./img/image.jpg" width="250px")
+                        div.d-flex.flex-column
+                           div.d-flex.flex-column.mb-3
+                              strong Cta. Recaudadora El Remanso
+                              span indicando número de DNI del titular.
+                           div.d-flex.flex-column
+                              strong Agente BCP
+                              span Código 15017 + DNI del titular.
+                     div.d-flex.align-items-center.mt-6
+                        div.me-3: img(src="./img/image.jpg" width="250px")
+                        div.d-flex.flex-column
+                           div.d-flex.flex-column.mb-3
+                              strong Cta. Recaudadora El Remanso
+                              span indicando número de DNI del titular.
+                           div.d-flex.flex-column
+                              strong Agente INTERBANK
+                              span Código 0791001 + DNI del titular.
+               .col-md-6
+                  section.bg-gris-eee.p-5
+                     .title-section
+                        h2
+                           strong En nuestra
+                           | Oficina principal
+                     p Av. América Norte No.2195.
+                     p Urb. Quintanas - Trujillo
+                     p.text-verde Aceptamos todas las tarjetas
+                     div.d-flex.justify-content-between
+                        img(src="./img/image.jpg" width="80px")
+                        img(src="./img/image.jpg" width="80px")
+                        img(src="./img/image.jpg" width="80px")
+                        img(src="./img/image.jpg" width="80px")
+      div
+         img.img-fluid(src="./img/image.jpg")
+
+
+
+
+
+
+
+append footer

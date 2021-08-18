@@ -1,0 +1,94 @@
+extends ../templates/template
+append config
+   - pageTitle= "Contáctenos";
+   - currentPage= "home";
+
+append header
+
+append main
+   main.main-content
+      .hero.hero--interna
+         .container.w-100.h-100.position-relative
+            .d-flex.align-items-center.justify-content-center.h-100
+               .hero__texto
+                  h1 Contáctenos
+                  nav.breadcrumb
+                     ul.list-unstyled.d-flex.m-0
+                        li: a(href="./index.html") Inicio
+                        li Contáctenos
+
+      section.section-inner.bg-verde
+         .container
+            .row
+               .col-md-6.offset-md-3
+                  .search-agencias
+                     h2.text-center.text-white ESCRÍBENOS
+                     p.text-white Si tienes alguna consulta adicional, déjanos tus datos y te responderemos a la brevedad posible.
+               .col-md-8.offset-md-2
+                  .formulario
+                     form
+                        .row
+                           .col-md-6
+                              .form-floating
+                                 input.form-control#nombre(type="text" placeholder="Nombre y apellidos")
+                                 label(for="nombre") Teléfono de contacto
+                           .col-md-6
+                              .form-floating
+                                 input.form-control#correo(type="text" placeholder="Correo")
+                                 label(for="correo") Correo
+                           .col-md-6
+                              .form-floating
+                                 input.form-control#telefono(type="text" placeholder="Teléfono de contacto")
+                                 label(for="telefono") Teléfono de contacto
+                           .col-md-6
+                              .form-floating
+                                 input.form-control#asunto(type="text" placeholder="Asunto")
+                                 label(for="asunto") Asunto
+                           .col-md-12
+                              .form-floating
+                                 textarea.form-control#mensaje(placeholder="Mensaje")
+                                 label(for="mensaje") Mensaje
+                           .col-md-12
+                              .form-check
+                                 input.form-check-input#terminos(type="checkbox")
+                                 label.form-check-label(for="terminos") Acepto los <a class="text-white" href="#" target="_blank">términos y condiciones</a> de El Remanso para el tratamiento de mis datos.
+                           .col-md-12
+                              .form-actions.text-center
+                                 input.btn.btn-azul(type="submit" value="Enviar")
+      section.section-inner
+         .container
+            .row
+               .col-md-8
+                  .title-section
+                     h2
+                        span Nuestro
+                        | Camposanto
+                  .mapa
+                     | IFRAME google maps
+               .col-md-4
+                  div
+                     p
+                        strong.text-verde Dirección<br>
+                        | Km. 10.5<br>
+                        | Carretera Huanchaco,<br>
+                        | Huanchaquito Alto<br>
+                        | Trujillo - Perú
+
+                     p
+                        strong.text-verde Central telefónica<br>
+                        | 044-604170
+
+                     p
+                        strong.text-verde Central telefónica 24 horas<br>
+                        | +51 970 762 104
+                  ul.list-unstyled.d-flex
+                     li
+                        a(href="#") <i class="fab fa-facebook-f"></i>
+                     li
+                        a(href="#") <i class="fab fa-instagram"></i>
+                     li
+                        a(href="#") <i class="fab fa-youtube"></i>
+
+
+
+append footer

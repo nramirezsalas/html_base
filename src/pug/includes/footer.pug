@@ -1,8 +1,8 @@
 footer.main-footer.bg-azul.text-white
-   .container
+   .container-fluid
       .row
          .col-md-3
-            img.img-fluid(src="./img/image.jpg")
+            img(src="./img/logo-white.png")
          .col-md-3
             section
                h2 Servicios
@@ -14,7 +14,7 @@ footer.main-footer.bg-azul.text-white
          .col-md-3
             section
                h2 Dirección
-               p.mb-1: strong Camposanto:
+               p.mb-0: strong CAMPOSANTO:
                p Km. 10.5 Carretera a Huanchaco<br>
                   | Huanchaquito Alto<br>
                   | Trujillo - Perú
@@ -24,29 +24,28 @@ footer.main-footer.bg-azul.text-white
          .col-md-3
             section
                h2 Teléfonos y correo
-               ul.list-unstyled
+               ul.list-unstyled.telefonos
                   li
-                     strong Central:
+                     strong CENTRAL:
                      span 044-604170
                   li
-                     strong 24 Horas:
+                     strong 24 HORAS:
                      span 970 762 104
                   li
-                     strong Correo:
+                     strong CORREO:
                      span: a(href="mailto:contacto@elremanso.com.pe") contacto@elremanso.com.pe
-               ul.list-unstyled.d-flex
+               ul.list-unstyled.d-flex.social
                   li
-                     a(href="#") <i class="fab fa-facebook-f"></i>
+                     a(href="https://www.facebook.com/ElRemansoCamposanto" target="_blank") <i class="fab fa-facebook-f"></i>
                   li
-                     a(href="#") <i class="fab fa-instagram"></i>
-                  li
-                     a(href="#") <i class="fab fa-youtube"></i>
+                     a(href="https://www.instagram.com/camposantoelremanso/" target="_blank") <i class="fab fa-instagram"></i>
+                  li.d-none
+                     a(href="https://www.youtube.com/channel/UCYQh7ha6TqUoq-h9FhEpcaQ/featured" target="_blank") <i class="fab fa-youtube"></i>
 
 
       .row
          .col-md-12.text-center
-            p.mb-5
-               a(href="#")
-                  img(src="./img/image.jpg" width="30px")
-                  | Libro de reclamaciones
-            p.small © 2017-2021 El Remanso. Todos los derechos reservados.
+            p.my-5
+               img.me-2(src="./img/svg/libro.svg")
+               a(href="#") Libro de reclamaciones
+            p.mb-3.small © 2017-2021 El Remanso. Todos los derechos reservados.

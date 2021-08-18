@@ -1,0 +1,49 @@
+extends ../templates/template
+append config
+   - pageTitle= "Servicios del día";
+   - currentPage= "home";
+
+append header
+
+append main
+   main.main-content
+      .hero.hero--interna
+         .container.w-100.h-100.position-relative
+            .d-flex.align-items-center.justify-content-center.h-100
+               .hero__texto
+                  h1 Servicios del día
+                  nav.breadcrumb
+                     ul.list-unstyled.d-flex.m-0
+                        li: a(href="#") Inicio
+                        li Servicios del día
+
+      section.section-inner
+         .container
+            .row
+               .col-md-6
+                  article.servicio-del-dia.position-relative
+                     div
+                        img.img-fluid(src="./img/image.jpg")
+                     div.text-center.mt-n4
+                        h2: a.btn.btn-azul.stretched-link(href="servicios-del-dia-sepelios.html") Sepelios
+               .col-md-6
+                  article.servicio-del-dia.position-relative
+                     div
+                        img.img-fluid(src="./img/image.jpg")
+                     div.text-center.mt-n4
+                        h2: a.btn.btn-azul.stretched-link(href="#") Velatorios
+               .col-md-6
+                  article.servicio-del-dia.position-relative
+                     div
+                        img.img-fluid(src="./img/image.jpg")
+                     div.text-center.mt-n4
+                        h2: a.btn.btn-azul.stretched-link(href="#") Cremaciones
+               .col-md-6
+                  article.servicio-del-dia.position-relative
+                     div
+                        img.img-fluid(src="./img/image.jpg")
+                     div.text-center.mt-n4
+                        h2: a.btn.btn-azul.stretched-link(href="#") Misas y Responsos
+
+
+append footer

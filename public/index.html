@@ -8,33 +8,33 @@
     <link rel="stylesheet" href="./css/libraries.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/app.css">
-    <link rel="short icon" href="./favicon.svg">
+    <link rel="short icon" href="./favicon.ico">
   </head>
   <body>
     <!--<div id="fb-root"></div>-->
     <!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0&appId=6191271477565494&autoLogAppEvents=1" nonce="BT8ratLH"></script>-->
     <!-- HEADER-->
-    <header class="main-header w-100 bg-dark">
+    <header class="main-header w-100">
       <h1 class="d-none">Home</h1>
       <div class="container-fluid">
         <div class="top-bar">
-          <ul class="list-unstyled d-flex justify-content-end">
-            <li><a href="#">Servicios del día</a></li>
+          <ul class="list-unstyled d-flex justify-content-end m-0">
+            <li><a href="servicios-del-dia.html">Servicios del día</a></li>
             <li><a href="#">Comprobantes electrónicos</a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li class="social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="social d-none"><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li class="social"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
           </ul>
         </div>
         <div class="menu-bar">
           <div class="row align-items-center">
             <div class="col-md-4 col-lg-5">
-              <nav class="navbar navbar-expand-lg navbar-dark z-index-2 py-2" id="menuPrincipal">
+              <nav class="navbar navbar-expand-lg z-index-2 py-2" id="menuPrincipal">
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav d-flex justify-content-around w-100">
                     <li class="nav-item"><a class="nav-link" href="./quienes-somos.html">Quiénes somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./camposanto.html">Camposanto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Camposanto</a></li>
                     <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
                   </ul>
                   <ul class="navbar-nav d-flex justify-content-around w-100 d-block d-md-none">
@@ -46,18 +46,16 @@
               </nav>
             </div>
             <div class="col-md-4 col-lg-2">
-              <div class="text-center"><a class="navbar-brand" href="./index.html">EL REMANSO</a>
-                <!--img(src="./logo.svg" alt='SiteName')-->
-              </div>
+              <div class="text-center"><a class="navbar-brand" href="./index.html"><img src="./logo.svg" alt="Remanso"></a></div>
             </div>
             <div class="col-md-4 col-lg-5">
-              <nav class="navbar navbar-expand-lg navbar-dark z-index-2 py-2">
+              <nav class="navbar navbar-expand-lg z-index-2 py-2">
                 <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse">
                   <ul class="navbar-nav d-flex justify-content-around w-100">
                     <li class="nav-item"><a class="nav-link" href="./medios-de-pago.html">Medios de pago</a></li>
                     <li class="nav-item"><a class="nav-link" href="./agencias-afiliadas.html">Agencias afiliadas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contáctenos</a></li>
+                    <li class="nav-item"><a class="link-contactenos nav-link" href="./contactenos.html">Contáctenos</a></li>
                   </ul>
                 </div>
               </nav>
@@ -72,85 +70,95 @@
       <div class="hero hero--home">
         <div class="container w-100 h-100 position-relative">
           <div class="hero__texto position-absolute">
-            <p>Belleza, paz y grandes recuerdos<br>en un solo lugar</p>
+            <p class="text-white">Belleza, paz y grandes recuerdos<br>en un solo lugar</p>
           </div>
         </div>
+        <div class="hero__image">
+          <picture>
+            <source srcset="./img/hero.webp" type="image/webp">
+            <source srcset="./img/hero.jpeg" type="image/jpeg"><img class="cover" src="./img/hero.jpeg" alt="Belleza, paz y grandes recuerdos en un solo lugar">
+          </picture>
+        </div>
+        <div class="bg-onda"><img src="./img/svg/onda1.svg"></div>
       </div>
-      <section class="section-inner">
-        <div class="container position-relative">
-          <div class="title-section">
-            <h2 id="toNosotros"><span>Acerca de</span>Nosotros</h2>
+      <section class="section-inner home-nosotros position-relative">
+        <div class="container">
+          <div class="title-section text-celeste">
+            <h2><strong>Acerca de</strong><span>Nosotros</span></h2>
           </div>
           <div class="row">
             <div class="col-md-6">
-              <p>El REMANSO es un lugar único y especial, diseñado como un espacio de encuentro y recogimiento. Cuenta con un paisaje que lo transforma en un oasis de silencio y calma para visitar a nuestros seres queridos. Posee una hermosa capilla ecuménica y salones velatorios para honrar y recordar a los que ya no están con nosotros.</p>
-              <p class="mb-0"><a class="btn btn-verde" href="#">Más información</a></p>
-            </div>
-          </div>
-          <div class="bg-image"><img src="./img/image.jpg"></div>
-        </div>
-      </section>
-      <section class="section-inner bg-azul text-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="title-section title-section--version-2"><img class="img-fluid" src="./img/image.jpg" width="50px">
-                <h2><span>Nuestros</span>Servicios</h2>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="owl-carousel owl-servicios owl-theme">
-                <div class="item">
-                  <article class="servicio servicio--owl">
-                    <div class="servicio__image"><img src="./img/image.jpg"></div>
-                    <div class="servicio__title">
-                      <h2><a class="btn btn-link stretched-link" href="#">Sepulturas</a></h2>
-                    </div>
-                  </article>
-                </div>
-                <div class="item">
-                  <article class="servicio servicio--owl">
-                    <div class="servicio__image"><img src="./img/image.jpg"></div>
-                    <div class="servicio__title">
-                      <h2><a class="btn btn-link stretched-link" href="#">Sepulturas</a></h2>
-                    </div>
-                  </article>
-                </div>
-                <div class="item">
-                  <article class="servicio servicio--owl">
-                    <div class="servicio__image"><img src="./img/image.jpg"></div>
-                    <div class="servicio__title">
-                      <h2><a class="btn btn-link stretched-link" href="#">Sepulturas</a></h2>
-                    </div>
-                  </article>
-                </div>
-                <div class="item">
-                  <article class="servicio servicio--owl">
-                    <div class="servicio__image"><img src="./img/image.jpg"></div>
-                    <div class="servicio__title">
-                      <h2><a class="btn btn-link stretched-link" href="#">Sepulturas</a></h2>
-                    </div>
-                  </article>
-                </div>
-              </div>
+              <p class="text-justify">El REMANSO es un lugar único y especial, diseñado como un espacio de encuentro y recogimiento. Cuenta con un paisaje que lo transforma en un oasis de silencio y calma para visitar a nuestros seres queridos. Posee una hermosa capilla ecuménica y salones velatorios para honrar y recordar a los que ya no están con nosotros.</p>
+              <p class="mb-0"><a class="btn btn-verde btn-sm" href="./quienes-somos.html">Más información</a></p>
             </div>
           </div>
         </div>
+        <div class="bg-image"><img class="cover" src="./img/acerca-de-nosotros.jpeg"></div>
       </section>
-      <section>
+      <section class="section-inner bg-azul text-white home-servicios">
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
-              <div class="bg-image"><img class="img-fluid" src="./img/image.jpg"></div>
+            <div class="col-md-3">
+              <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                <div class="title-section text-center"><img class="img-fluid mb-4" src="./img/svg/manos-cruz.svg" width="78px">
+                  <h2 class="mb-0"><strong>Nuestros</strong><span>Servicios</span></h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="owl-carousel owl-servicios owl-theme owl-nav-1">
+                <div class="item">
+                  <article class="servicio servicio--owl">
+                    <div class="servicio__image"><img src="./img/sepulturas.jpeg"></div>
+                    <div class="servicio__title">
+                      <h2><a class="stretched-link" href="./servicios-sepulturas.html">Sepulturas</a></h2>
+                    </div>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="servicio servicio--owl">
+                    <div class="servicio__image"><img src="./img/servicios-funerarios.jpeg"></div>
+                    <div class="servicio__title">
+                      <h2><a class="stretched-link" href="./servicios-funerarios.html">Servicios funerarios</a></h2>
+                    </div>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="servicio servicio--owl">
+                    <div class="servicio__image"><img src="./img/cremaciones.jpeg"></div>
+                    <div class="servicio__title">
+                      <h2><a class="stretched-link" href="./servicios-cremaciones.html">Cremaciones</a></h2>
+                    </div>
+                  </article>
+                </div>
+                <div class="item">
+                  <article class="servicio servicio--owl">
+                    <div class="servicio__image"><img src="./img/cremaciones.jpeg"></div>
+                    <div class="servicio__title">
+                      <h2><a class="stretched-link" href="./servicios-complementarios.html">Servicios complementarios</a></h2>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-solicitar-servicio">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 position-relative overflow-hidden">
+              <div class="bg-image h-100"><img class="img-fluid cover" src="./img/solicitar-servicio.jpeg"></div>
+              <div class="bg-onda"><img src="./img/svg/onda2.svg"></div>
             </div>
             <div class="col-md-5">
-              <div class="section-inner">
-                <div class="title-section title-section--version-2">
-                  <h2><span>Solicitar</span>Servicio</h2>
+              <div class="section-inner px-lg-4">
+                <div class="title-section text-azul">
+                  <h2><strong>Solicitar</strong><span>Servicio</span></h2>
                 </div>
                 <div class="formulario">
                   <form>
-                    <div class="form-floating">
+                    <div class="form-floating form-select-arrow">
                       <select class="form-control" id="floatingServicio">
                         <option value="1">Sepulturas</option>
                         <option value="2">Servicios funerarios</option>
@@ -171,11 +179,11 @@
                       <input class="form-control" id="floatingCorreo" type="email" placeholder="Correo electrónico">
                       <label for="floatingCorreo">Correo electrónico</label>
                     </div>
-                    <div class="form-item form-check">
+                    <div class="form-item form-check form-check-acepto">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                       <label class="form-check-label" for="flexCheckDefault">Acepto los <a href="#toNosotros" class="scroll-to">términos y condiciones de El Remanso</a> para el tratamiento de mis datos.</label>
                     </div>
-                    <div class="form-actions">
+                    <div class="form-actions mt-4">
                       <input class="btn btn-verde" type="submit" value="Enviar solicitud">
                     </div>
                   </form>
@@ -185,57 +193,57 @@
           </div>
         </div>
       </section>
-      <section class="section-inner bg-celeste">
+      <section class="section-inner section-inner--small bg-celeste">
         <div class="container">
-          <div class="title-section title-section--version-3">
-            <h2>Agencias afiliadas</h2>
+          <div class="title-section title-section--mini text-center">
+            <h2 class="text-white">Agencias afiliadas</h2>
           </div>
-          <div class="owl-carousel owl-agencias owl-theme">
+          <div class="owl-carousel owl-agencias owl-theme owl-nav-2">
             <div class="item">
-              <div class="agencia text-white">
+              <div class="agencia text-white text-center">
                 <p class="text-azul">Funeraria Bon Valencia</p>
                 <p>Jr. Pallardeli 298 – Urb Razuri</p>
                 <p>Frente al Hospital de Alta complejidad</p>
               </div>
             </div>
             <div class="item">
-              <div class="agencia text-white">
+              <div class="agencia text-white text-center">
                 <p class="text-azul">Funeraria Bon Valencia</p>
                 <p>Jr. Pallardeli 298 – Urb Razuri</p>
                 <p>Frente al Hospital de Alta complejidad</p>
               </div>
             </div>
             <div class="item">
-              <div class="agencia text-white">
+              <div class="agencia text-white text-center">
                 <p class="text-azul">Funeraria Bon Valencia</p>
                 <p>Jr. Pallardeli 298 – Urb Razuri</p>
                 <p>Frente al Hospital de Alta complejidad</p>
               </div>
             </div>
             <div class="item">
-              <div class="agencia text-white">
+              <div class="agencia text-white text-center">
                 <p class="text-azul">Funeraria Bon Valencia</p>
                 <p>Jr. Pallardeli 298 – Urb Razuri</p>
                 <p>Frente al Hospital de Alta complejidad</p>
               </div>
             </div>
             <div class="item">
-              <div class="agencia text-white">
+              <div class="agencia text-white text-center">
                 <p class="text-azul">Funeraria Bon Valencia</p>
                 <p>Jr. Pallardeli 298 – Urb Razuri</p>
                 <p>Frente al Hospital de Alta complejidad</p>
               </div>
             </div>
           </div>
-          <p class="text-center"><a class="btn btn-azul" href="#">Ver todas las agencias</a></p>
+          <p class="text-center mt-5"><a class="btn btn-azul" href="./agencias-afiliadas.html">Ver todas las agencias</a></p>
         </div>
       </section>
     </main>
     <!-- FOOTER-->
     <footer class="main-footer bg-azul text-white">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3"><img class="img-fluid" src="./img/image.jpg"></div>
+          <div class="col-md-3"><img src="./img/logo-white.png"></div>
           <div class="col-md-3">
             <section>
               <h2>Servicios</h2>
@@ -250,7 +258,7 @@
           <div class="col-md-3">
             <section>
               <h2>Dirección</h2>
-              <p class="mb-1"><strong>Camposanto:</strong></p>
+              <p class="mb-0"><strong>CAMPOSANTO:</strong></p>
               <p>
                 Km. 10.5 Carretera a Huanchaco<br>Huanchaquito Alto<br>
                 Trujillo - Perú
@@ -263,23 +271,23 @@
           <div class="col-md-3">
             <section>
               <h2>Teléfonos y correo</h2>
-              <ul class="list-unstyled">
-                <li><strong>Central:</strong><span>044-604170</span></li>
-                <li><strong>24 Horas:</strong><span>970 762 104</span></li>
-                <li><strong>Correo:</strong><span><a href="mailto:contacto@elremanso.com.pe">contacto@elremanso.com.pe</a></span></li>
+              <ul class="list-unstyled telefonos">
+                <li><strong>CENTRAL:</strong><span>044-604170</span></li>
+                <li><strong>24 HORAS:</strong><span>970 762 104</span></li>
+                <li><strong>CORREO:</strong><span><a href="mailto:contacto@elremanso.com.pe">contacto@elremanso.com.pe</a></span></li>
               </ul>
-              <ul class="list-unstyled d-flex">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              <ul class="list-unstyled d-flex social">
+                <li><a href="https://www.facebook.com/ElRemansoCamposanto" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/camposantoelremanso/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="d-none"><a href="https://www.youtube.com/channel/UCYQh7ha6TqUoq-h9FhEpcaQ/featured" target="_blank"><i class="fab fa-youtube"></i></a></li>
               </ul>
             </section>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <p class="mb-5"><a href="#"><img src="./img/image.jpg" width="30px">Libro de reclamaciones</a></p>
-            <p class="small">© 2017-2021 El Remanso. Todos los derechos reservados.</p>
+            <p class="my-5"><img class="me-2" src="./img/svg/libro.svg"><a href="#">Libro de reclamaciones</a></p>
+            <p class="mb-3 small">© 2017-2021 El Remanso. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>

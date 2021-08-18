@@ -1,24 +1,24 @@
-header(class="main-header w-100 bg-dark")
+header(class="main-header w-100")
    h1(class="d-none") #{pageTitle}
    .container-fluid
       .top-bar
-         ul.list-unstyled.d-flex.justify-content-end
-            li: a(href="#") Servicios del día
+         ul.list-unstyled.d-flex.justify-content-end.m-0
+            li: a(href="servicios-del-dia.html") Servicios del día
             li: a(href="#") Comprobantes electrónicos
-            li: a(href="#") <i class="fab fa-facebook-f"></i>
-            li: a(href="#") <i class="fab fa-instagram"></i>
-            li: a(href="#") <i class="fab fa-youtube"></i>
-            li: a(href="#") <i class="fab fa-whatsapp"></i>
+            li.social: a(href="#") <i class="fab fa-facebook-f"></i>
+            li.social: a(href="#") <i class="fab fa-instagram"></i>
+            li.social.d-none: a(href="#") <i class="fab fa-youtube"></i>
+            li.social: a(href="#") <i class="fab fa-whatsapp"></i>
       .menu-bar
          .row.align-items-center
             .col-md-4.col-lg-5
-               nav(class="navbar navbar-expand-lg navbar-dark z-index-2 py-2" id="menuPrincipal")
+               nav(class="navbar navbar-expand-lg z-index-2 py-2" id="menuPrincipal")
                   div(class='collapse navbar-collapse' id='navbarNav')
                      ul.navbar-nav.d-flex.justify-content-around.w-100
                         li.nav-item
                            a.nav-link(href="./quienes-somos.html") Quiénes somos
                         li.nav-item
-                           a.nav-link(href="./camposanto.html") Camposanto
+                           a.nav-link(href="#") Camposanto
                         li.nav-item
                            a.nav-link(href="./servicios.html") Servicios
                      ul.navbar-nav.d-flex.justify-content-around.w-100.d-block.d-md-none
@@ -30,10 +30,10 @@ header(class="main-header w-100 bg-dark")
                            a.nav-link(href="./contactanos.html") Contáctenos
             .col-md-4.col-lg-2
                div.text-center
-                  a(class='navbar-brand' href='./index.html') EL REMANSO
-                  //img(src="./logo.svg" alt='SiteName')
+                  a(class='navbar-brand' href='./index.html')
+                     img(src="./logo.svg" alt='Remanso')
             .col-md-4.col-lg-5
-               nav(class="navbar navbar-expand-lg navbar-dark z-index-2 py-2")
+               nav(class="navbar navbar-expand-lg z-index-2 py-2")
                   button(class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
                      span.navbar-toggler-icon
                   div(class='collapse navbar-collapse')
@@ -43,6 +43,6 @@ header(class="main-header w-100 bg-dark")
                         li.nav-item
                            a.nav-link(href="./agencias-afiliadas.html") Agencias afiliadas
                         li.nav-item
-                           a.nav-link(href="./contactanos.html") Contáctenos
+                           a.link-contactenos.nav-link(href="./contactenos.html") Contáctenos
 
    #inicio

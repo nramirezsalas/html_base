@@ -21,6 +21,7 @@ $verde: #6EA63B !default;
 $gris-ccc: #CCCCCC !default;
 $gris-444: #444444 !default;
 $gris-777: #777777 !default;
+$gris-eee: #EEEEEE !default;
 
 $gris-text-muted: #999999 !default;
 
@@ -40,7 +41,8 @@ $theme-colors: (
    "verde": $verde,
    "gris-ccc": $gris-ccc,
    "gris-444": $gris-444,
-   "gris-777": $gris-777
+   "gris-777": $gris-777,
+   "gris-eee": $gris-eee
 ) !default;
 
 // Options
@@ -97,7 +99,7 @@ $grid-row-columns:            6 !default;
 
 // Components
 // border-radius-variables
-$border-radius:               .25rem !default;
+$border-radius:               17px !default;
 $border-radius-sm:            .2rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-pill:          50rem !default;
@@ -124,7 +126,7 @@ $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
-$line-height-base:            1.5 !default;
+$line-height-base:            1.6 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
@@ -137,7 +139,7 @@ $h6-font-size:                $font-size-base !default;
 
 $lead-font-size:              $font-size-base * 1.25 !default;
 $lead-font-weight:            300 !default;
-$small-font-size:             .85rem !default;
+$small-font-size:             12px !default;
 $sub-sup-font-size:           .75rem !default;
 
 $text-muted:                  $gris-text-muted !default;
@@ -150,7 +152,7 @@ $input-btn-padding-x:         .75rem !default;
 
 // Buttons
 $btn-padding-y:               18px !default;
-$btn-padding-x:               45px !default;
+$btn-padding-x:               60px !default;
 
 $btn-link-color:              $link-color !default;
 $btn-link-hover-color:        $link-hover-color !default;

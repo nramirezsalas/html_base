@@ -16,7 +16,7 @@ jQuery.noConflict();
             let scrollTop = $('.main-header .menu-bar').offset().top;
 
             $(window).scroll(function () {
-               if (getWidth() > 768) {
+               if (getWidth() > 320) {
                   if ($(window).scrollTop() > scrollTop) {
                      $('.main-header .menu-bar').addClass('fixed-top');
                      let altoHeader = $('.main-header .menu-bar').height();

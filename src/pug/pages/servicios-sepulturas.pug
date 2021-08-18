@@ -23,7 +23,7 @@ append main
                source(srcset="./img/header/servicios.jpeg" type="image/jpeg")
                img.cover(src="./img/header/servicios.jpeg" alt="Servicios")
          .bg-onda
-            img(src="./img/svg/onda4.svg")
+            img(src="./img/svg/onda1.svg")
 
       section.section-inner
          .container
@@ -34,10 +34,10 @@ append main
                li: a.btn.btn-azul(href="#") Servicios complementarios
          .container.text-azul
             p Hermosos espacios ecológicos y perpetuos para recordar la memoria de nuestros seres queridos.
-            .row
+            .row.d-none.d-lg-flex
                .col-md-3.mb-4
-                  div.d-flex.justify-content-end.nav-vertical
-                     div.nav.flex-column.nav-pills.me-3(role="tablist" aria-orientation="vertical")
+                  div.d-flex.justify-content-lg-end.nav-vertical
+                     nav.nav.flex-column.nav-pills(role="tablist" aria-orientation="vertical")
                         a.btn.btn-link.active(data-bs-toggle="pill" data-bs-target="#sep_personal" role="tab") Sepultura Personal
                         a.btn.btn-link(data-bs-toggle="pill" data-bs-target="#sep_doble" role="tab") Sepultura Doble
                         a.btn.btn-link(data-bs-toggle="pill" data-bs-target="#sep_cuadruple" role="tab") Sepultura Cuádruple
@@ -46,7 +46,7 @@ append main
 
                .col-md-9.mb-4
                   div.d-flex.align-items-start
-                     div.tab-content.bg-gris-eee.w-100.h-100.p-5.rounded
+                     div.tab-content.bg-gris-eee.w-100.h-100.p-5.rounded.tab-content-servicios
                         div.tab-pane.show.active#sep_personal(role="tabpanel")
                            .row
                               .col-md-6.fs-6
@@ -133,6 +133,114 @@ append main
                                        img(src="./img/sepultura-personal.jpeg")
                                     .item
                                        img(src="./img/sepultura-personal.jpeg")
+         .container.d-block.d-lg-none
+            .accordion#accordionServicio
+               .accordion-item
+                  h2.accordion-header#heading1
+                     button.accordion-button.collapsed.text-azul(type="button" data-bs-toggle="collapse" data-bs-target="#collapse1") Sepultura Personal
+                  #collapse1.accordion-collapse.collapse(data-bs-parent="#accordionServicio")
+                     .accordion-body
+                        .row
+                           .col-md-6.fs-6
+                              p Características
+                              ul
+                                 li Sepultura de una capacidad  bajo césped.
+                                 li Sepultura Perpetua.
+                                 li Sarcófago de concreto armado.
+                              p.my-4: a.btn.btn-celeste(href="#") Solicitar cotización
+                           .col-md-6
+                              .owl-carousel.owl-servicio-galeria-1.owl-nav-3
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+
+               .accordion-item
+                  h2.accordion-header#heading2
+                     button.accordion-button.collapsed.text-azul(type="button" data-bs-toggle="collapse" data-bs-target="#collapse2") Sepultura Doble
+                  #collapse2.accordion-collapse.collapse(data-bs-parent="#accordionServicio")
+                     .accordion-body
+                        .row
+                           .col-md-6.fs-6
+                              p Características
+                              ul
+                                 li Sepultura de una capacidad  bajo césped.
+                                 li Sepultura Perpetua.
+                                 li Sarcófago de concreto armado.
+                              p.my-4: a.btn.btn-celeste(href="#") Solicitar cotización
+                           .col-md-6
+                              .owl-carousel.owl-servicio-galeria-1.owl-nav-3
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+               .accordion-item
+                  h2.accordion-header#heading3
+                     button.accordion-button.collapsed.text-azul(type="button" data-bs-toggle="collapse" data-bs-target="#collapse3") Sepultura Cuádruple
+                  #collapse3.accordion-collapse.collapse(data-bs-parent="#accordionServicio")
+                     .accordion-body
+                        .row
+                           .col-md-6.fs-6
+                              p Características
+                              ul
+                                 li Sepultura de una capacidad  bajo césped.
+                                 li Sepultura Perpetua.
+                                 li Sarcófago de concreto armado.
+                              p.my-4: a.btn.btn-celeste(href="#") Solicitar cotización
+                           .col-md-6
+                              .owl-carousel.owl-servicio-galeria-1.owl-nav-3
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+               .accordion-item
+                  h2.accordion-header#heading4
+                     button.accordion-button.collapsed.text-azul(type="button" data-bs-toggle="collapse" data-bs-target="#collapse4") Sepultura Quíntuple
+                  #collapse4.accordion-collapse.collapse(data-bs-parent="#accordionServicio")
+                     .accordion-body
+                        .row
+                           .col-md-6.fs-6
+                              p Características
+                              ul
+                                 li Sepultura de una capacidad  bajo césped.
+                                 li Sepultura Perpetua.
+                                 li Sarcófago de concreto armado.
+                              p.my-4: a.btn.btn-celeste(href="#") Solicitar cotización
+                           .col-md-6
+                              .owl-carousel.owl-servicio-galeria-1.owl-nav-3
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+               .accordion-item
+                  h2.accordion-header#heading5
+                     button.accordion-button.collapsed.text-azul(type="button" data-bs-toggle="collapse" data-bs-target="#collapse5") Sepultura Individual Compartida
+                  #collapse5.accordion-collapse.collapse(data-bs-parent="#accordionServicio")
+                     .accordion-body
+                        .row
+                           .col-md-6.fs-6
+                              p Características
+                              ul
+                                 li Sepultura de una capacidad  bajo césped.
+                                 li Sepultura Perpetua.
+                                 li Sarcófago de concreto armado.
+                              p.my-4: a.btn.btn-celeste(href="#") Solicitar cotización
+                           .col-md-6
+                              .owl-carousel.owl-servicio-galeria-1.owl-nav-3
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
+                                 .item
+                                    img(src="./img/sepultura-personal.jpeg")
 
 
 append footer

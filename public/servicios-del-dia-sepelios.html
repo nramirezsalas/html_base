@@ -29,9 +29,25 @@
         </div>
         <div class="menu-bar">
           <div class="row align-items-center">
-            <div class="col-md-4 col-lg-5">
-              <nav class="navbar navbar-expand-lg z-index-2 py-2" id="menuPrincipal">
-                <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="col-md-4 col-lg-5 d-none d-lg-block">
+              <nav class="navbar navbar-expand-lg z-index-2 py-2">
+                <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav d-flex justify-content-around w-100">
+                    <li class="nav-item"><a class="nav-link" href="./quienes-somos.html">Quiénes somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Camposanto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="text-lg-center px-4 px-lg-0 d-flex justify-content-between d-lg-block w-100"><a class="navbar-brand" href="./index.html"><img src="./logo.svg" alt="Remanso"></a>
+                <div class="d-flex align-items-center">
+                  <button class="navbar-toggler ml-auto d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+                </div>
+              </div>
+              <nav class="menu-mobile" id="menuPrincipal">
+                <div class="px-4 collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav d-flex justify-content-around w-100">
                     <li class="nav-item"><a class="nav-link" href="./quienes-somos.html">Quiénes somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Camposanto</a></li>
@@ -40,17 +56,13 @@
                   <ul class="navbar-nav d-flex justify-content-around w-100 d-block d-md-none">
                     <li class="nav-item"><a class="nav-link" href="./medios-de-pago.html">Medios de pago</a></li>
                     <li class="nav-item"><a class="nav-link" href="./agencias-afiliadas.html">Agencias afiliadas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactanos.html">Contáctenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactenos.html">Contáctenos</a></li>
                   </ul>
                 </div>
               </nav>
             </div>
-            <div class="col-md-4 col-lg-2">
-              <div class="text-center"><a class="navbar-brand" href="./index.html"><img src="./logo.svg" alt="Remanso"></a></div>
-            </div>
-            <div class="col-md-4 col-lg-5">
+            <div class="col-md-4 col-lg-5 d-none d-lg-block">
               <nav class="navbar navbar-expand-lg z-index-2 py-2">
-                <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse">
                   <ul class="navbar-nav d-flex justify-content-around w-100">
                     <li class="nav-item"><a class="nav-link" href="./medios-de-pago.html">Medios de pago</a></li>
@@ -94,7 +106,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-7">
-              <div class="bg-verde rounded p-5">
+              <div class="bg-verde rounded p-4 p-lg-5 mb-5 mb-lg-0">
                 <div class="title-section title-section--lg">
                   <h2 class="text-white">Sepelios</h2>
                 </div>
@@ -109,7 +121,7 @@
               </div>
             </div>
             <div class="col-md-4 offset-md-1">
-              <div class="owl-carousel owl-servicio-del-dia owl-nav-3">
+              <div class="owl-carousel owl-servicio-del-dia owl-nav-3 px-4 px-lg-0">
                 <div class="item"><img src="./img/parque-cruz.jpeg"></div>
                 <div class="item"><img src="./img/parque-cruz.jpeg"></div>
                 <div class="item"><img src="./img/parque-cruz.jpeg"></div>
@@ -123,7 +135,9 @@
     <footer class="main-footer bg-azul text-white">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3"><img src="./img/logo-white.png"></div>
+          <div class="col-md-3">
+            <div class="text-center text-lg-start mb-6 mb-lg-0"><img src="./img/logo-white.png"></div>
+          </div>
           <div class="col-md-3">
             <section>
               <h2>Servicios</h2>
@@ -156,17 +170,16 @@
                 <li><strong>24 HORAS:</strong><span>970 762 104</span></li>
                 <li><strong>CORREO:</strong><span><a href="mailto:contacto@elremanso.com.pe">contacto@elremanso.com.pe</a></span></li>
               </ul>
-              <ul class="list-unstyled d-flex social">
+              <ul class="list-unstyled d-flex social justify-content-center justify-content-lg-start mt-4 mt-lg-0">
                 <li><a href="https://www.facebook.com/ElRemansoCamposanto" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="https://www.instagram.com/camposantoelremanso/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li class="d-none"><a href="https://www.youtube.com/channel/UCYQh7ha6TqUoq-h9FhEpcaQ/featured" target="_blank"><i class="fab fa-youtube"></i></a></li>
               </ul>
             </section>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <p class="my-5"><img class="me-2" src="./img/svg/libro.svg"><a href="#">Libro de reclamaciones</a></p>
+            <p class="mt-lg-5 mb-lg-5 mt-0"><img class="me-2" src="./img/svg/libro.svg"><a href="#">Libro de reclamaciones</a></p>
             <p class="mb-3 small">© 2017-2021 El Remanso. Todos los derechos reservados.</p>
           </div>
         </div>

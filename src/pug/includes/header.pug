@@ -11,9 +11,25 @@ header(class="main-header w-100")
             li.social: a(href="#") <i class="fab fa-whatsapp"></i>
       .menu-bar
          .row.align-items-center
-            .col-md-4.col-lg-5
-               nav(class="navbar navbar-expand-lg z-index-2 py-2" id="menuPrincipal")
-                  div(class='collapse navbar-collapse' id='navbarNav')
+            .col-md-4.col-lg-5.d-none.d-lg-block
+               nav(class="navbar navbar-expand-lg z-index-2 py-2")
+                  div(class='collapse navbar-collapse')
+                     ul.navbar-nav.d-flex.justify-content-around.w-100
+                        li.nav-item
+                           a.nav-link(href="./quienes-somos.html") Quiénes somos
+                        li.nav-item
+                           a.nav-link(href="#") Camposanto
+                        li.nav-item
+                           a.nav-link(href="./servicios.html") Servicios
+            .col-md-4.col-lg-2
+               div.text-lg-center.px-4.px-lg-0.d-flex.justify-content-between.d-lg-block.w-100
+                  a(class='navbar-brand' href='./index.html')
+                     img(src="./logo.svg" alt='Remanso')
+                  div.d-flex.align-items-center
+                     button.navbar-toggler.ml-auto.d-block.d-lg-none(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+                        <i class="fas fa-bars"></i>
+               nav(class="menu-mobile" id="menuPrincipal")
+                  div(class='px-4 collapse navbar-collapse' id='navbarNav')
                      ul.navbar-nav.d-flex.justify-content-around.w-100
                         li.nav-item
                            a.nav-link(href="./quienes-somos.html") Quiénes somos
@@ -27,15 +43,9 @@ header(class="main-header w-100")
                         li.nav-item
                            a.nav-link(href="./agencias-afiliadas.html") Agencias afiliadas
                         li.nav-item
-                           a.nav-link(href="./contactanos.html") Contáctenos
-            .col-md-4.col-lg-2
-               div.text-center
-                  a(class='navbar-brand' href='./index.html')
-                     img(src="./logo.svg" alt='Remanso')
-            .col-md-4.col-lg-5
+                           a.nav-link(href="./contactenos.html") Contáctenos
+            .col-md-4.col-lg-5.d-none.d-lg-block
                nav(class="navbar navbar-expand-lg z-index-2 py-2")
-                  button(class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
-                     span.navbar-toggler-icon
                   div(class='collapse navbar-collapse')
                      ul.navbar-nav.d-flex.justify-content-around.w-100
                         li.nav-item

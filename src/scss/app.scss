@@ -470,7 +470,7 @@ body {
                margin-right: .5rem;
 
                a {
-                  background: $azul;
+                  background: white;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -483,14 +483,14 @@ body {
                   }
 
                   i {
-                     color: rgba(255, 255, 255, .5);
+                     color: $azul;
                   }
 
                   &:hover {
-                     background: $verde;
+                     background: $azul;
 
                      i {
-                        color: $azul;
+                        color: white;
                      }
                   }
                }
@@ -501,14 +501,14 @@ body {
             }
 
             a {
-               color: $azul;
+               color: white;
                font-weight: 500;
                font-size: 14px;
                line-height: 20px;
                padding: .25rem 0 !important;
                position: relative;
 
-               @include link-hover($azul, 0);
+               @include link-hover(white, 0);
                @include mobile {
                   line-height: 1.1;
                   display: block;
@@ -529,7 +529,7 @@ body {
          ul {
             li {
                a {
-                  color: $azul;
+                  color: white;
                   font-weight: 500;
                   font-size: 14px;
                   line-height: 20px;
@@ -537,8 +537,8 @@ body {
                   position: relative;
 
                   &.link-contactenos {
-                     background: $azul;
-                     color: white;
+                     background: white;
+                     color: $azul;
                      font-size: 12px;
                      padding-left: 1rem !important;
                      padding-right: 1rem !important;
@@ -549,11 +549,12 @@ body {
                      }
 
                      &:hover {
-                        background: $verde;
+                        background: $azul;
+                        color: white;
                      }
                   }
 
-                  @include link-hover($azul, 0);
+                  @include link-hover(white, 0);
                }
             }
          }
@@ -583,6 +584,28 @@ body {
                }
             }
          }
+
+         nav {
+            ul {
+               li {
+                  a {
+                     color: $azul;
+
+                     &.link-contactenos {
+                        background: $azul;
+                        color: white;
+
+                        &:hover {
+                           background: $verde;
+                           color: white;
+                        }
+                     }
+
+                     @include link-hover($azul, 0);
+                  }
+               }
+            }
+         }
       }
 
       .navbar-toggler {
@@ -597,7 +620,7 @@ body {
                padding: .5rem 0;
 
                a {
-
+                  color: $azul;
                }
             }
          }
@@ -658,7 +681,7 @@ body {
    &.hero--home {
       height: 800px;
       @include mobile {
-         height: 90vh;
+         height: 80vh;
       }
 
       .hero__image {
@@ -778,6 +801,10 @@ body {
             justify-content: center;
             border-radius: 50%;
             background: white;
+            @include mobile {
+               width: 48px;
+               height: 48px;
+            }
 
             i {
                font-size: 2rem;
@@ -799,7 +826,7 @@ body {
             position: absolute;
             left: -37px;
             @include mobile {
-               left: 0;
+               left: 20px;
             }
          }
 
@@ -807,7 +834,7 @@ body {
             position: absolute;
             right: -37px;
             @include mobile {
-               right: 0;
+               right: 20px;
             }
          }
       }

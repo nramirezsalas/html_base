@@ -11,27 +11,34 @@ append main
          .container.w-100.h-100.position-relative
             .d-flex.align-items-center.justify-content-center.h-100
                .hero__texto
-                  h1 Servicios
+                  h1.text-white Servicios
                   nav.breadcrumb
-                     ul.list-unstyled.d-flex.m-0
-                        li: a(href="./index.html") Inicio
-                        li: a(href="./servicios.html") Servicios
-                        li Sepulturas
+                     ol.breadcrumb
+                        li.breadcrumb-item: a(href="./index.html") Inicio
+                        li.breadcrumb-item: a(href="./servicios.html") Servicios
+                        li.breadcrumb-item.active Sepulturas
+         .hero__image.hero--cover
+            picture
+               source(srcset="./img/header/servicios.webp" type="image/webp")
+               source(srcset="./img/header/servicios.jpeg" type="image/jpeg")
+               img.cover(src="./img/header/servicios.jpeg" alt="Servicios")
+         .bg-onda
+            img(src="./img/svg/onda4.svg")
 
       section.section-inner
          .container
-            ul.list-unstyled.d-flex.justify-content-between.mb-5
-               li: a.btn.btn-verde(href="#") Sepulturas
+            ul.list-unstyled.d-flex.justify-content-between.mb-5.nav-servicios
+               li: a.btn.btn-azul.is-active(href="#") Sepulturas
                li: a.btn.btn-azul(href="#") Servicios funerarios
                li: a.btn.btn-azul(href="#") Cremaciones
                li: a.btn.btn-azul(href="#") Servicios complementarios
-         .container
+         .container.text-azul
             p Hermosos espacios ecológicos y perpetuos para recordar la memoria de nuestros seres queridos.
             .row
                .col-md-3.mb-4
                   div.d-flex.justify-content-end.nav-vertical
                      div.nav.flex-column.nav-pills.me-3(role="tablist" aria-orientation="vertical")
-                        a.btn.btn-link.active.btn-gris-eee(data-bs-toggle="pill" data-bs-target="#sep_personal" role="tab") Sepultura Personal
+                        a.btn.btn-link.active(data-bs-toggle="pill" data-bs-target="#sep_personal" role="tab") Sepultura Personal
                         a.btn.btn-link(data-bs-toggle="pill" data-bs-target="#sep_doble" role="tab") Sepultura Doble
                         a.btn.btn-link(data-bs-toggle="pill" data-bs-target="#sep_cuadruple" role="tab") Sepultura Cuádruple
                         a.btn.btn-link(data-bs-toggle="pill" data-bs-target="#sep_quintuple" role="tab") Sepultura Quíntuple
@@ -39,38 +46,93 @@ append main
 
                .col-md-9.mb-4
                   div.d-flex.align-items-start
-                     div.tab-content.bg-gris-eee.w-100.h-100.p-5
-                        div.tab-pane.fade.show.active#sep_personal(role="tabpanel")
+                     div.tab-content.bg-gris-eee.w-100.h-100.p-5.rounded
+                        div.tab-pane.show.active#sep_personal(role="tabpanel")
                            .row
-                              .col-md-6
+                              .col-md-6.fs-6
                                  p Características
                                  ul
                                     li Sepultura de una capacidad  bajo césped.
                                     li Sepultura Perpetua.
                                     li Sarcófago de concreto armado.
-                                 p: a.btn.btn-celeste(href="#") Solicitar cotización
+                                 p.mt-5: a.btn.btn-celeste(href="#") Solicitar cotización
                               .col-md-6
-                                 .owl-carousel.owl-servicio-galeria.owl-nav-1
+                                 .owl-carousel.owl-servicio-galeria-1.owl-nav-3
                                     .item
-                                       img(src="./img/image.jpg")
+                                       img(src="./img/sepultura-personal.jpeg")
                                     .item
-                                       img(src="./img/image.jpg")
+                                       img(src="./img/sepultura-personal.jpeg")
                                     .item
-                                       img(src="./img/image.jpg")
+                                       img(src="./img/sepultura-personal.jpeg")
 
-                        div.tab-pane.fade#sep_doble(role="tabpanel")
-                           p doble
-                        div.tab-pane.fade#sep_cuadruple(role="tabpanel")
-                           p cuadruple
-                        div.tab-pane.fade#sep_quintuple(role="tabpanel")
-                           p quintuple
-                        div.tab-pane.fade#sep_ind_compartida(role="tabpanel")
-                           p individual compartida
-
-
-
-
-
+                        div.tab-pane#sep_doble(role="tabpanel")
+                           .row
+                              .col-md-6.fs-6
+                                 p Características
+                                 ul
+                                    li Sepultura de una capacidad  bajo césped.
+                                    li Sepultura Perpetua.
+                                    li Sarcófago de concreto armado.
+                                 p.mt-5: a.btn.btn-celeste(href="#") Solicitar cotización
+                              .col-md-6
+                                 .owl-carousel.owl-servicio-galeria-2.owl-nav-3
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                        div.tab-pane#sep_cuadruple(role="tabpanel")
+                           .row
+                              .col-md-6.fs-6
+                                 p Características
+                                 ul
+                                    li Sepultura de una capacidad  bajo césped.
+                                    li Sepultura Perpetua.
+                                    li Sarcófago de concreto armado.
+                                 p.mt-5: a.btn.btn-celeste(href="#") Solicitar cotización
+                              .col-md-6
+                                 .owl-carousel.owl-servicio-galeria-3.owl-nav-3
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                        div.tab-pane#sep_quintuple(role="tabpanel")
+                           .row
+                              .col-md-6.fs-6
+                                 p Características
+                                 ul
+                                    li Sepultura de una capacidad  bajo césped.
+                                    li Sepultura Perpetua.
+                                    li Sarcófago de concreto armado.
+                                 p.mt-5: a.btn.btn-celeste(href="#") Solicitar cotización
+                              .col-md-6
+                                 .owl-carousel.owl-servicio-galeria-4.owl-nav-3
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                        div.tab-pane#sep_ind_compartida(role="tabpanel")
+                           .row
+                              .col-md-6.fs-6
+                                 p Características
+                                 ul
+                                    li Sepultura de una capacidad  bajo césped.
+                                    li Sepultura Perpetua.
+                                    li Sarcófago de concreto armado.
+                                 p.mt-5: a.btn.btn-celeste(href="#") Solicitar cotización
+                              .col-md-6
+                                 .owl-carousel.owl-servicio-galeria-5.owl-nav-3
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
+                                    .item
+                                       img(src="./img/sepultura-personal.jpeg")
 
 
 append footer

@@ -71,41 +71,48 @@
         <div class="container w-100 h-100 position-relative">
           <div class="d-flex align-items-center justify-content-center h-100">
             <div class="hero__texto">
-              <h1>Servicios del día</h1>
+              <h1 class="text-white">Servicios del día</h1>
               <nav class="breadcrumb">
-                <ul class="list-unstyled d-flex m-0">
-                  <li><a href="./index.html">Inicio</a></li>
-                  <li><a href="./servicios-del-dia.html">Servicios del día</a></li>
-                  <li>Sepelios</li>
-                </ul>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                  <li class="breadcrumb-item"><a href="./servicios-del-dia.html">Servicios del día</a></li>
+                  <li class="breadcrumb-item active">Sepelios</li>
+                </ol>
               </nav>
             </div>
           </div>
         </div>
+        <div class="hero__image hero--cover">
+          <picture>
+            <source srcset="./img/header/servicios-de-dia.webp" type="image/webp">
+            <source srcset="./img/header/servicios-de-dia.jpeg" type="image/jpeg"><img class="cover" src="./img/header/servicios-de-dia.jpeg" alt="Servicios del día">
+          </picture>
+        </div>
+        <div class="bg-onda"><img src="./img/svg/onda1.svg"></div>
       </div>
       <section class="section-inner">
         <div class="container">
           <div class="row">
             <div class="col-md-7">
               <div class="bg-verde rounded p-5">
-                <div class="title-section">
+                <div class="title-section title-section--lg">
                   <h2 class="text-white">Sepelios</h2>
                 </div>
-                <div class="sepelio-item bg-white p-4 rounded mb-4">
-                  <p><strong>PROSPERO EUCLIDES MENDEZ LUJAN</strong></p>
-                  <p class="small"><strong>Plataforma :</strong>Santo Toribio<br><strong>Fecha :</strong>14-07-2021<br><strong>Hora:</strong>11:00 am</p>
+                <div class="servicio-dia-item bg-white p-4 rounded mb-4 text-azul">
+                  <p class="mb-1">PROSPERO EUCLIDES MENDEZ LUJAN</p>
+                  <p><strong>Plataforma :</strong>Santo Toribio<br><strong>Fecha :</strong>14-07-2021<br><strong>Hora:</strong>11:00 am</p>
                 </div>
-                <div class="sepelio-item bg-white p-4 rounded">
-                  <p><strong>MELITA ANGULO PIZARRO</strong></p>
-                  <p class="small"><strong>Plataforma :</strong>Santo Marcos<br><strong>Fecha :</strong>14-07-2021<br><strong>Hora:</strong>16:30 pm</p>
+                <div class="servicio-dia-item bg-white p-4 rounded text-azul">
+                  <p class="mb-1">MELITA ANGULO PIZARRO</p>
+                  <p><strong>Plataforma :</strong>Santo Marcos<br><strong>Fecha :</strong>14-07-2021<br><strong>Hora:</strong>16:30 pm</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
-              <div class="owl-carousel owl-servicio-del-dia owl-nav-1">
-                <div class="item"><img src="./img/image.jpg"></div>
-                <div class="item"><img src="./img/image.jpg"></div>
-                <div class="item"><img src="./img/image.jpg"></div>
+            <div class="col-md-4 offset-md-1">
+              <div class="owl-carousel owl-servicio-del-dia owl-nav-3">
+                <div class="item"><img src="./img/parque-cruz.jpeg"></div>
+                <div class="item"><img src="./img/parque-cruz.jpeg"></div>
+                <div class="item"><img src="./img/parque-cruz.jpeg"></div>
               </div>
             </div>
           </div>

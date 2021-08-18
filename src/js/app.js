@@ -107,7 +107,39 @@ jQuery.noConflict();
          })
 
          // servicio galeria
-         $('.owl-servicio-galeria').owlCarousel({
+         $('.owl-servicio-galeria-1').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            items: 1
+         })
+         $('.owl-servicio-galeria-2').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            items: 1
+         })
+         $('.owl-servicio-galeria-3').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            items: 1
+         })
+         $('.owl-servicio-galeria-4').owlCarousel({
+            loop: false,
+            margin: 0,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            items: 1
+         })
+         $('.owl-servicio-galeria-5').owlCarousel({
             loop: false,
             margin: 0,
             nav: true,

@@ -434,16 +434,10 @@ body {
    }
 
    .btn {
-      line-height: 14px;
-      font-size: 14px;
       font-weight: 500;
       text-transform: uppercase;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-
-      &.btn-sm {
-         padding: 0.65rem 1.5rem;
-         font-size: 12px;
-      }
+      min-width: 160px;
 
       &.btn-verde {
          color: white;
@@ -1516,8 +1510,6 @@ section {
       }
 
       &.btn-azul--hover-alterno {
-         border-width: 3px;
-
          &:hover {
             background: white;
             color: $azul;
